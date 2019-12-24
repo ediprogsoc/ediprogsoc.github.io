@@ -55,6 +55,13 @@
   | Requires only 1 list (MailChimp) | Need to take payment through site securely - more complex |
   | Everything done through 1 place (website) | Forgoes EUSA's credibility and authentication |
   
+- Do not use MailChimp at all and instead use EUSA's own emailing services.
+
+  | Pro | Con |
+  ------|------
+  | Simplifies the 2 list problem (everything is done through EUSA) | Lose access to MailChimp's rich resources (both UI & functional) |
+  | | Cannot account for people who want to be on the mailing list but not a member |
+  
 ### Site Functionality (*Recommended*)
 
 - Website should include [Mailchimp form](https://mailchimp.com/features/custom-forms/) which signs them up to the mailing list. It can then point
