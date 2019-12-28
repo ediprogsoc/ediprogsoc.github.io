@@ -17,3 +17,5 @@ also some information on the commitee.
   [EUSA](https://www.eusa.ed.ac.uk/activities/societies/society/17825/) to buy membership.
   
 - *News/Events Page* - Updated periodically to reflect upcoming events and/or interesting news e.g. Hello World Hack.
+
+- *FAQ Page* - A page to answer all the common questions newcomers have.
