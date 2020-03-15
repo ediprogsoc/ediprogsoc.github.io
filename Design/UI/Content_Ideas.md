@@ -21,3 +21,5 @@ also some information on the commitee.
 - *FAQ Page* - A page to answer all the common questions newcomers have.
 
 - Sponsor Us - Info about sponsorship
+
+- 404 - that
