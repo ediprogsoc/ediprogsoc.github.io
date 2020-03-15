@@ -3,7 +3,7 @@
 ## Potential Pages
 > *Italic Points* are ideas for pages which are non-essential to the website's functionality.
 
-- Home Page - Should contain a **brief** description of the society and its aims (welcoming to beginners etc.). Maybe include some of the positive reviews
+- ~Home Page~ - Should contain a **brief** description of the society and its aims (welcoming to beginners etc.). Maybe include some of the positive reviews
   from Facebook? Important to **not** overload this page with text.
   
 - About Page - Contains more detailed information about the society along with maybe some past projects (like the flappy bird game). Maybe
@@ -20,6 +20,6 @@ also some information on the commitee.
 
 - *FAQ Page* - A page to answer all the common questions newcomers have.
 
-- Sponsor Us - Info about sponsorship
+- ~Sponsor Us~ - Info about sponsorship
 
 - 404 - that
