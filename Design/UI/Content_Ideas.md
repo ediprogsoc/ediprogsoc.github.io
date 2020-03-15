@@ -19,3 +19,5 @@ also some information on the commitee.
 - *News/Events Page* - Updated periodically to reflect upcoming events and/or interesting news e.g. Hello World Hack.
 
 - *FAQ Page* - A page to answer all the common questions newcomers have.
+
+- Sponsor Us - Info about sponsorship
