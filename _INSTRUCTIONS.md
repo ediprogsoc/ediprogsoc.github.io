@@ -38,7 +38,7 @@
 - [ ] Add a robots.txt file with the following content `Sitemap: http://www.yourdomain/sitemap.xml`
 - [ ] Go to [Google Search Console](https://search.google.com/u/0/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=dashboard)
 - [ ] Copy the verification string, go to Cloudflare DNS, add a record Type `TXT` Name `your domain` Content `the verification string`
-
+- [ ] Once confirmed, input sitemap url to console for Google Search bot indexing
 
 ###### You're Done!
 - [ ] crack open the champagne
