@@ -22,4 +22,4 @@ also some information on the commitee.
 
 - ~Sponsor Us~ - Info about sponsorship
 
-- 404 - that
+- ~404~ - that
