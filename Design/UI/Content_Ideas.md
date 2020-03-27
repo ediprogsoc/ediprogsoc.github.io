@@ -16,7 +16,7 @@ also some information on the commitee.
 - Membership Page - A page where prospective parties can learn about and sign up to the mailing list. After this inital sign-up, it can prompt them to go to
   [EUSA](https://www.eusa.ed.ac.uk/activities/societies/society/17825/) to buy membership.
   
-- *News/Events Page* - Updated periodically to reflect upcoming events and/or interesting news e.g. Hello World Hack.
+- ~News/Events Page~ - Updated periodically to reflect upcoming events and/or interesting news e.g. Hello World Hack.
 
 - *FAQ Page* - A page to answer all the common questions newcomers have.
 
