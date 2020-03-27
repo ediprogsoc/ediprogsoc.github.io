@@ -22,7 +22,7 @@
 
 ###### SSL via Cloudflare
 - [ ] Add a new website (with your new domain)
-- [ ] When asked, go back to to Namecheap and input the two custom DNS
+- [ ] When asked, go back to to Namecheap and input the two custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`
 - [ ] Wait an eternity for Cloudflare to acknowledge it
 - [ ] Go to Cloudflare DNS settings and...
 - [ ] add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
