@@ -1,7 +1,7 @@
 # How to Launch Site
 
 ###### Misc Cleanup
-- [ ] Make sure you have a 404 page
+- [X] Make sure you have a 404 page
 - [ ] Replace all `index.html` links with `/` (works on Github Pages)
 - [ ] For all other links, remove the `.html` portion of the link
 - [ ] \(Optional) Change favicons
