@@ -11,4 +11,4 @@ window.addEventListener("scroll", function() {
     $('.navbar').fadeIn();
   }
   prev_pos = curr_pos;
-  });;
+  });
