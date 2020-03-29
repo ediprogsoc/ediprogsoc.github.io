@@ -6,7 +6,7 @@
 - ~Home Page~ - Should contain a **brief** description of the society and its aims (welcoming to beginners etc.). Maybe include some of the positive reviews
   from Facebook? Important to **not** overload this page with text.
   
-- About Page - Contains more detailed information about the society along with maybe some past projects (like the flappy bird game). Maybe
+- ~About Page~ ~`PROJECTS PAGE & COMMITTEE PAGE`~ - Contains more detailed information about the society along with maybe some past projects (like the flappy bird game). Maybe
 also some information on the commitee.
 
 - *Challenge Page* - A page which has programming challenges to solve. Should probably be split into *beginner*, *intermediate* and *advanced*.
