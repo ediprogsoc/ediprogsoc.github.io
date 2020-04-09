@@ -6,7 +6,8 @@
 - [ ] For all other links, remove the `.html` portion of the link
 - [ ] \(Optional) Change favicons
 - [ ] \(Optional) Change meta descriptions and titles
-- [ ] \(Optional) Reduce image sizes & convert gifs to autoplaying videos (for performance)
+- [ ] \(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)
+- [ ] \(Optional) [Add Webp image compatibility](https://web.dev/serve-images-webp/)
 
 ###### Github Pages
 - [ ] Go to repo > settings > Github Pages to setup temporary page with no custom domain
