@@ -20,7 +20,7 @@
 - [ ] \(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)
 - [ ] Don't touch DNS settings yet, and move on to the next section
 
-###### ~SSL via Cloudflare~ Only use Cloudflare if you want auto minification/ caching etc, otherwise do this for Namecheap
+###### ~SSL via Cloudflare~ Only use Cloudflare if you want auto minification/ caching etc, otherwise do this for Namecheap and tick https on GH pages
 - [ ] ~Add a new website (with your new domain)~
 - [ ] ~When asked, go back to to Namecheap and input the custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`~
 - [ ] ~Wait an eternity for Cloudflare to acknowledge it~
