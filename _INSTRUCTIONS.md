@@ -20,17 +20,17 @@
 - [ ] \(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)
 - [ ] Don't touch DNS settings yet, and move on to the next section
 
-###### SSL via Cloudflare
-- [ ] Add a new website (with your new domain)
-- [ ] When asked, go back to to Namecheap and input the custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`
-- [ ] Wait an eternity for Cloudflare to acknowledge it
-- [ ] Go to Cloudflare DNS settings and...
+###### ~SSL via Cloudflare~ Only use Cloudflare if you want auto minification/ caching etc, otherwise do this for Namecheap
+- [ ] ~Add a new website (with your new domain)~
+- [ ] ~When asked, go back to to Namecheap and input the custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`~
+- [ ] ~Wait an eternity for Cloudflare to acknowledge it~
+- [ ] ~Go to Cloudflare DNS settings and...~
 - [ ] add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
 - [ ] add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
 - [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
-- [ ] \(If non-existent) add a record Type `TXT` Name `your domain` Content `v=spf1 include:spf.efwd.registrar-servers.com ~all`
-- [ ] \(Optional) set up MX records for email forwarding
-- [ ] Go to SSL settings and set to Flexible (limitation of Github Pages, can't do full encryption)
+- [ ] ~\(If non-existent) add a record Type `TXT` Name `your domain` Content `v=spf1 include:spf.efwd.registrar-servers.com ~all`~
+- [ ] ~\(Optional) set up MX records for email forwarding~
+- [ ] ~Go to SSL settings and set to Flexible (limitation of Github Pages, can't do full encryption)~
 
 ###### Sitemap & Robots.txt
 - [ ] Use a [Sitemap Generator](https://www.xml-sitemaps.com/), edit output to remove any sites that you want hidden (404 page etc)
