@@ -15,6 +15,7 @@
 ###### HTML errors & optimisation
 - [ ] Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors
 - [ ] Use Google Lighthouse to identify & update old dependencies with known vulnerabilities
+- [ ] \(Optional) Optimise images via https://imgbot.net/
 
 ###### Domain Provider via Namecheap
 - [ ] Grab a domain!
