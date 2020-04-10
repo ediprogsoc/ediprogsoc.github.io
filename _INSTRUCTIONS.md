@@ -12,8 +12,9 @@
 ###### Github Pages
 - [ ] Go to repo > settings > Github Pages to setup temporary page with no custom domain
 
-###### HTML errors
+###### HTML errors & optimisation
 - [ ] Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors
+- [ ] Use Google Lighthouse to identify & update old dependencies with known vulnerabilities
 
 ###### Domain Provider via Namecheap
 - [ ] Grab a domain!
