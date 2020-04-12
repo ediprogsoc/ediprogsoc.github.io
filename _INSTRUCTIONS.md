@@ -8,6 +8,7 @@
 - [ ] \(Optional) Change meta descriptions and titles
 - [ ] \(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)
 - [ ] \(Optional) [Add Webp image compatibility](https://web.dev/serve-images-webp/)
+- [ ] \(Optional) [Implement image lazy loading](https://github.com/ApoorvSaxena/lozad.js)
 
 ###### Github Pages
 - [ ] Go to repo > settings > Github Pages to setup temporary page with no custom domain
