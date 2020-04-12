@@ -1,27 +1,27 @@
 # How to Launch Site
 
-###### Misc Cleanup
+###### Misc Cleanup and Optimisation
 - [X] Make sure you have a 404 page
 - [ ] Replace all `index.html` links with `/` (works on Github Pages)
 - [ ] For all other links, remove the `.html` portion of the link
-- [ ] \(Optional) Change favicons
+- [ ] \(Optional) [Change favicons](https://favicon.io/)
 - [ ] \(Optional) Change meta descriptions and titles
 - [ ] \(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)
 - [ ] \(Optional) [Add Webp image compatibility](https://web.dev/serve-images-webp/)
 - [ ] \(Optional) [Implement image lazy loading](https://github.com/ApoorvSaxena/lozad.js)
+- [ ] \(Optional) [Optimise image sizes](https://imgbot.net/)
 
 ###### Github Pages
 - [ ] Go to repo > settings > Github Pages to setup temporary page with no custom domain
 
-###### HTML errors & optimisation
+###### HTML errors & vulnerabilities
 - [ ] Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors
 - [ ] Use Google Lighthouse to identify & update old dependencies with known vulnerabilities
-- [ ] \(Optional) Optimise images via https://imgbot.net/
 
 ###### Domain Provider via Namecheap
 - [ ] Grab a domain!
-- [ ] Go to Github Pages settings and add the new custom domain
 - [ ] \(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)
+- [ ] Go to Github Pages settings and add the new custom domain
 - [ ] Don't touch DNS settings yet, and move on to the next section
 
 ###### ~SSL via Cloudflare~ Only use Cloudflare if you want auto minification/ caching etc, otherwise do this for Namecheap and tick https on GH pages
@@ -45,4 +45,4 @@
 - [ ] Once confirmed, input sitemap url to console for Google Search bot indexing
 
 ###### You're Done!
-- [ ] crack open the champagne
+- [ ] Crack open the champagne
