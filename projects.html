@@ -100,21 +100,6 @@ ProgSoc
   </header>
       
 
-      
-      
-<section class="py-5">
-<div class="container">
-  <div class="row mx-0">
-    <div class="col-sm-12 mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or year...">
-    </div>
-      
-</div>
-
-<div class="row mx-0" id="myItems">
-<div class="">
-
- 
 <!--
 
   _____  ______          _____    __  __ ______ 
@@ -125,134 +110,81 @@ ProgSoc
  |_|  \_\______/_/    \_\_____/  |_|  |_|______|
                                                                               
                                                                                    
-The filter searches by the text within <h5> with class "card-title".
+The filter searches by the text within
+cards > class "card-headers" > <h5> with class "search-title".
 
-Copy and paste the chunks below to make a new entry.
-
-Include extra keywords in the title to improve search,
-use the Bootstrap class "d-none" to hide them in <span>
+Include the year in the search-title for search consistency,
+but you can use the Bootstrap class "d-none" to hide them in <span>
 or "invisible" to only hide from non screen readers. 
 
-If you still require help, learn html and remake the site, or
-yell at this guy and ask him for help https://www.linkedin.com/in/perryliuofficial
+Copy and paste the chunks below to make a new entry.
+The ones closest to the top and under this read me is the newest event.
 
-Make sure you give unique name for each copy of the following
-or comment them out if not needed
+If you still require help, learn html and remake the site :P
 
-#moreFLAPPY {display: none;}
-#moreFLAPPY2 {display: none;}
-#moreFLAPPY3 {display: none;}
-
-<span id="dotsFLAPPY">...</span><span id="moreFLAPPY">
-<span id="dotsFLAPPY2">...</span><span id="moreFLAPPY2">
-<span id="dotsFLAPPY3">...</span><span id="moreFLAPPY3">
-
-function myFunctionFLAPPY()
-
-var dots = document.getElementById("dotsFLAPPY");
-var moreText = document.getElementById("moreFLAPPY");
-var btnText = document.getElementById("myBtnFLAPPY");
-
-var dots = document.getElementById("dotsFLAPPY2");
-var moreText = document.getElementById("moreFLAPPY2");
-
-var dots = document.getElementById("dotsFLAPPY3");
-var moreText = document.getElementById("moreFLAPPY3");
-
-onclick="myFunctionFLAPPY()" id="myBtnFLAPPY"
-
+Remember to update the following each time:
+href="#FB1" aria-controls="Info" aria-selected="true">Info</a>
+id="FB1" aria-labelledby="Info">
 
 -->
-    
-    
+      
+<section class="py-5 container">
+<div class="w-100 px-0">
+    <div class="mb-3">
+      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or year...">
+    </div>
+      
+
+<div id="myItems">
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 border-0">
-<div class="row m-0">
-<div class="col-md-4 p-0"><img class="img-fluid m-3 rounded" src="assets/img/projects/placeholder.jpg"></div>
-<div class="col-md-8">
-<div class="card-body">
-    <h5 class="card-title"><strong>Flappy Bird Game</strong> <span class="lead text-muted">Unknown Year</span></h5>
-    <a href="https://github.com/rohan-nittur/ProgSoc-Website" target="_blank"><i class="fab fa-github"> Download</i></a>
-    <br />
-<style>
-#moreFLAPPY {display: none;}
-#moreFLAPPY2 {display: none;}
-#moreFLAPPY3 {display: none;}
-</style>
-<span><strong>Reporting Automation:</strong> Created centralised toolkits that automatically pull data from<span id="dotsFLAPPY">...</span><span id="moreFLAPPY"> individual branch toolkits for national analytics that get sent back to individual toolkits for consumption, in addition to automated conversion from UK data format to international standard for monthly reports to global head office.</span></span> 
-<br /> 
-<span><strong>Eudcation Downscaling:</strong> Downscaled relevant information from national head office<span id="dotsFLAPPY2">...</span><span id="moreFLAPPY2"> to individual branches through regular tailored content creation and dissemination.</span></span>
-<br />
-<span><strong>Conference Organiser:</strong> Organised and ran several national conferences with up to 350<span id="dotsFLAPPY3">...</span><span id="moreFLAPPY3"> attendees. Roles ranged from running educational workshops to conference-wide budgeting and reporting.</span> </span> 
-<br />
+<div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/projects/placeholder.jpg" style="object-fit: cover;">
+        </div>
+            
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">Flappy Bird</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">PyGame | May 2017</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">python pygame 2017 flappy bird</h5>
+          
+          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#FB1" role="tab" aria-controls="Info" aria-selected="true">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#FB2" role="tab" aria-controls="Technical Specifications" aria-selected="false">Technical Specifications</a>
+            </li>
 
-<script>
-function myFunctionFLAPPY() {
-var dots = document.getElementById("dotsFLAPPY");
-var moreText = document.getElementById("moreFLAPPY");
-var btnText = document.getElementById("myBtnFLAPPY");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-btnText.innerHTML = "Read more"; 
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-btnText.innerHTML = "Read less"; 
-moreText.style.display = "inline";
-}
-//additional shizzle2
-var dots = document.getElementById("dotsFLAPPY2");
-var moreText = document.getElementById("moreFLAPPY2");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-moreText.style.display = "inline";
-}
-//additional shizzle3
-var dots = document.getElementById("dotsFLAPPY3");
-var moreText = document.getElementById("moreFLAPPY3");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-moreText.style.display = "inline";
-}    
-
-}
-</script>
-<button class="btn btn-outline-primary btn-sm mt-3" onclick="myFunctionFLAPPY()" id="myBtnFLAPPY" type="button">Read More</button>
-
-</div>
-</div>
-</div>
-</div>
-
-
+          </ul>
+        </div>
+        
+    
+        <div class="card-body">   
+           <div class="tab-content">
+            <div class="tab-pane active" id="FB1" role="tabpanel" aria-labelledby="Info">
+              <p class="card-text"><a href="/" target="_blank" class="btn btn-dark btn-sm">Download Project</a> Random info</p>
+            </div>
+             
+            <div class="tab-pane" id="FB2" role="tabpanel" aria-labelledby="Technical Specifications">  
+              <p class="card-text">Only use this tab thingy if you have other stuff to say, such as list of collaborators, project story, or list of technology used</p>
+            </div>
+             
+          </div>
+        </div>
+        </div>
+    </div>
+      </div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
-    
 
-    
-
-    
-</div>
-</div>
+     </div>    
 </div>
 
-<script>
-$(document).ready(function(){
-$("#myInput").on("keyup", function() {
-var value = $(this).val().toLowerCase();
-$("#myList li").filter(function() {
-$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-});
-});
-});
-</script>
 
-      </section>    
+
+      </section>      
       
       
       

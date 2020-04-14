@@ -114,7 +114,6 @@ ProgSoc
 <div class="row mx-0" id="myItems">
 <div class="card-group w-100">
 
- 
 <!--
 
   _____  ______          _____    __  __ ______ 
@@ -125,7 +124,8 @@ ProgSoc
  |_|  \_\______/_/    \_\_____/  |_|  |_|______|
                                                                               
                                                                                    
-The filter searches by the text within <h5> with class "card-title".
+The filter searches by the text within
+cards > class "card-headers" > <h5> with class "search-title".
 
 Copy and paste the chunks below to make a new entry.
 
@@ -133,16 +133,17 @@ Include extra keywords in the title to improve search,
 use the Bootstrap class "d-none" to hide them in <span>
 or "invisible" to only hide from non screen readers. 
 
-If you still require help, learn html and remake the site, or
-yell at this guy and ask him for help https://www.linkedin.com/in/perryliuofficial
+If you still require help, learn html and remake the site :P
 
 -->
+
     
     
 <!------------------------->
 <div class="col-sm-12 pb-3">
         <div class="card pl-4 cool-hover shadow">
-          <h5 class="font-weight-medium mt-3 card-title">Is the society beginner friendly?<span class="d-none">no experience bad new</span></h5>
+        <div class="card-header d-none"><h5 class="search-title">no experience bad new</h5></div>
+          <h5 class="font-weight-medium mt-3 card-title">Is the society beginner friendly?</h5>
           <p class="mt-3">Of course! We have different tracks tailored to people with different experience!</p>
         </div>
 </div>
@@ -151,7 +152,8 @@ yell at this guy and ask him for help https://www.linkedin.com/in/perryliuoffici
 <!------------------------->
 <div class="col-sm-12 pb-3">
         <div class="card pl-4 cool-hover shadow">
-          <h5 class="font-weight-medium mt-3 card-title">Do I need to be a computer science student?<span class="d-none">business study education school</span></h5>
+        <div class="card-header d-none"><h5 class="search-title">business study education school</h5></div>
+          <h5 class="font-weight-medium mt-3 card-title">Do I need to be a computer science student?</h5>
           <p class="mt-3">Everyone is welcome. Heck, we've had presidents with no coding experience too!</p>
         </div>
 </div>
@@ -160,7 +162,8 @@ yell at this guy and ask him for help https://www.linkedin.com/in/perryliuoffici
 <!------------------------->
 <div class="col-sm-12 pb-3">
         <div class="card pl-4 cool-hover shadow">
-          <h5 class="font-weight-medium mt-3 card-title">What do you actually do?<span class="d-none">teach learn session coding programming</span></h5>
+        <div class="card-header d-none"><h5 class="search-title">teach learn session coding programming</h5></div>
+          <h5 class="font-weight-medium mt-3 card-title">What do you actually do?</h5>
           <p class="mt-3">We're currently focusing primarily on Python, from basic to advanced programming, in addition to hackathons and socials.</p>
         </div>
 </div>
@@ -169,7 +172,8 @@ yell at this guy and ask him for help https://www.linkedin.com/in/perryliuoffici
 <!------------------------->
 <div class="col-sm-12 pb-3">
         <div class="card pl-4 cool-hover shadow">
-          <h5 class="font-weight-medium mt-3 card-title">Can I join in the middle of the semester?<span class="d-none">late join half</span></h5>
+        <div class="card-header d-none"><h5 class="search-title">late join half</h5></div>
+          <h5 class="font-weight-medium mt-3 card-title search-title">Can I join in the middle of the semester?</h5>
           <p class="mt-3">Sure thing! Just pop on in to our next session, and we'll help you get up to speed.</p>
         </div>
 </div>
@@ -182,16 +186,6 @@ yell at this guy and ask him for help https://www.linkedin.com/in/perryliuoffici
 </div>
 </div>
 
-<script>
-$(document).ready(function(){
-$("#myInput").on("keyup", function() {
-var value = $(this).val().toLowerCase();
-$("#myList li").filter(function() {
-$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-});
-});
-});
-</script>
 
       </section>    
       
