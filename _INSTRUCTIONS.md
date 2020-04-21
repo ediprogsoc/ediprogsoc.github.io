@@ -32,8 +32,6 @@
 - [ ] add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
 - [ ] add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
 - [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
-- [ ] ~\(If non-existent) add a record Type `TXT` Name `your domain` Content `v=spf1 include:spf.efwd.registrar-servers.com ~all`~
-- [ ] ~\(Optional) set up MX records for email forwarding~
 - [ ] ~Go to SSL settings and set to Flexible (limitation of Github Pages, can't do full encryption)~
 
 ###### Sitemap & Robots.txt
@@ -43,6 +41,15 @@
 - [ ] Go to [Google Search Console](https://search.google.com/u/0/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=dashboard)
 - [ ] Copy the verification string, go to Cloudflare DNS, add a record Type `TXT` Name `your domain` Content `verification string`
 - [ ] Once confirmed, input sitemap url to console for Google Search bot indexing
+
+###### Optional: MX Records and Email Forwarding
+- [ ] Option 1: [Namecheap > Gmail](https://www.namecheap.com/support/knowledgebase/article.aspx/308/2214/how-to-set-up-free-email-forwarding) via free email forwarding
+- [ ] Option 2: [Namecheap > GSuite](https://support.google.com/a/answer/87127?hl=en) email forwarding **PAID OPTION**
+- [ ] Option 3: Namecheap > [Cloudflare > GSuite](https://support.google.com/a/answer/7174013?hl=en) email forwarding **PAID OPTION**
+- [ ] Option 4: Namecheap [private email hosting](https://www.namecheap.com/hosting/email/) **PAID OPTION**
+- [ ] Option 5: Namecheap > Gmail via [improvmx](https://app.improvmx.com/) **PAID OPTION\***
+- [ ] Option 6: Namecheap > Cloudflare > Gmail via [improvmx](https://app.improvmx.com/) **PAID OPTION\***
+<br>\*Free option only allows receiving and replying to emails
 
 ###### You're Done!
 - [ ] Crack open the champagne
