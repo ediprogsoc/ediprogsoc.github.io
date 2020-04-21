@@ -43,7 +43,7 @@
 - [ ] Once confirmed, input sitemap url to console for Google Search bot indexing
 
 ###### Optional: MX Records and Email Forwarding
-- [ ] Option 1: [Namecheap > Gmail](https://www.namecheap.com/support/knowledgebase/article.aspx/308/2214/how-to-set-up-free-email-forwarding) via free email forwarding
+- [ ] Option 1: [Namecheap > Gmail](https://www.namecheap.com/support/knowledgebase/article.aspx/308/2214/how-to-set-up-free-email-forwarding) via free email forwarding\*
 - [ ] Option 2: [Namecheap > GSuite](https://support.google.com/a/answer/87127?hl=en) email forwarding **PAID OPTION**
 - [ ] Option 3: Namecheap > [Cloudflare > GSuite](https://support.google.com/a/answer/7174013?hl=en) email forwarding **PAID OPTION**
 - [ ] Option 4: Namecheap [private email hosting](https://www.namecheap.com/hosting/email/) **PAID OPTION**
