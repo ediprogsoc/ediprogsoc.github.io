@@ -47,8 +47,8 @@
 - [ ] Option 2: [Namecheap > GSuite](https://support.google.com/a/answer/87127?hl=en) email forwarding **PAID OPTION**
 - [ ] Option 3: Namecheap > [Cloudflare > GSuite](https://support.google.com/a/answer/7174013?hl=en) email forwarding **PAID OPTION**
 - [ ] Option 4: Namecheap [private email hosting](https://www.namecheap.com/hosting/email/) **PAID OPTION**
-- [ ] Option 5: Namecheap > Gmail via [improvmx](https://app.improvmx.com/) **PAID OPTION\***
-- [ ] Option 6: Namecheap > Cloudflare > Gmail via [improvmx](https://app.improvmx.com/) **PAID OPTION\***
+- [ ] Option 5: [Namecheap > Gmail](https://app.improvmx.com/) via improvmx **PAID OPTION\***
+- [ ] Option 6: Namecheap > [Cloudflare > Gmail](https://app.improvmx.com/) via improvmx **PAID OPTION\***
 <br>\*Free option only allows receiving and replying to emails
 
 ###### You're Done!
