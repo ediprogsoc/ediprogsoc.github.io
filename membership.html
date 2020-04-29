@@ -21,7 +21,6 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/landingpage.css">
-    <link rel="stylesheet" href="assets/css/collapse.css">
     <!-- Font Awesome -->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,6 +47,14 @@
     <style>
 
     h2 {padding: 35px 0px 0px;}
+
+    .parallax-window {
+    min-height: 400px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    line-height: 400px;
+    }
 
     .bs-example{
       margin: 0px;
@@ -132,14 +139,9 @@ ProgSoc
 </div>
 </nav>
 
-<!-- Full Page Image w/ Parallax -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/bg-masthead.jpg" data-speed="0.4">
-  <span style="width:500px;position:absolute; top: 28%; left: 50%;margin-left: -250px;text-align: center; color:white; font-size:300%; font-weight:lighter; text-shadow: 2px 2px 4px #000000;">Membership</span>
-  <div class="parallax-slider">
-    <div class="img-gradient">
-    <img src="assets/img/bg-masthead.jpg" width="100%" height="100%"></img>
-    </div>
-  </div>
+      <!-- Full Page Image -->
+  <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/bg-masthead.jpg" data-speed="0.4">
+  <span style="color:white; font-size:300%; font-weight:lighter; text-shadow: 2px 2px 4px #000000;">Membership</span>
 </div>
 
 <!-- Main content -->
@@ -182,7 +184,7 @@ ProgSoc
 <p class="cleantext" style="padding: 20px 30px 0px 10px;"><strong>The price of membership for students at the University of Edinburgh is £2 per semester</strong>. Click on the EUSA logo below to go to our page on the EUSA website. You can either log in with your student details to pay for your membership online, or pay us in person.</p>
 
 <a href="https://www.eusa.ed.ac.uk/activities/societies/society/17825/" target="_blank">
-<img class="eusa" src="assets/img/EUSA_logo.png" width="15%" height="15%"></img>
+<img class="eusa" src="assets/img/EUSA_logo.png" width="15%" height="15%">
 </a>
 
 <h3 class="clean" style="padding: 40px 0px 0px 10px;">For non-students:</h3>
@@ -236,14 +238,7 @@ ProgSoc
     </div>
   </div>
 </footer>
- <script src="assets/js/collapse.js"></script>
- <script src="./assets/js/parallax.js-1.5.0/parallax.min.js"></script>
- <script>
- $('.parallax-window').parallax({
-     naturalWidth: 600,
-     naturalHeight: 400
-   });
- </script>
+<script src="assets/js/parallax.js-1.5.0/parallax.js"></script>
  <script src="assets/js/main.js"></script>
 </body>
 </html>
