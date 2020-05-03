@@ -1,3 +1,5 @@
+//NAVBAR AND SCROLLING
+
 var prev_pos;
 
 window.addEventListener("scroll", function() {
@@ -25,3 +27,16 @@ window.addEventListener("scroll", function() {
   prev_pos = curr_pos;
 
   });
+
+//PARALLAX HERO IMAGE
+
+    $(document).ready(function(){
+        $(".collapse.show").each(function(){
+        	$(this).prev(".btn").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".btn").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".btn").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
