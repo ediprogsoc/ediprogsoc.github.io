@@ -12,7 +12,7 @@ window.addEventListener("scroll", function() {
     $('.navbar').fadeOut(250);
   }
 
-  else if (curr_pos > prev_pos){
+  else if (curr_pos > prev_pos+10){
     $('.navbar').show();
   }
 

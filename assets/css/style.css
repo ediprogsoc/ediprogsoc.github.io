@@ -32,8 +32,7 @@ h2 {padding: 35px 0px 0px;}
     .parallax-window {
     min-height: 400px;
     background: transparent;
-    display: flex;
-    justify-content: center;
+    text-align:center;
     line-height: 400px;
     }
 
