@@ -25,16 +25,13 @@ body, html {
   transform: translateY(-10px);
 }
 
+.title {
+  font-size:300%;
+  font-weight:lighter;
+  text-shadow:2px 2px 4px #000000;
+}
 
-/*PARALLAX*/
 h2 {padding: 35px 0px 0px;}
-
-    .parallax-window {
-    min-height: 400px;
-    background: transparent;
-    text-align:center;
-    line-height: 400px;
-    }
 
     .bs-example{
       margin: 0px;
