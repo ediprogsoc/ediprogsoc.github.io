@@ -6,8 +6,8 @@ window.addEventListener("scroll", function() {
 
   console.log(curr_pos, prev_pos);
 
-  if (curr_pos < prev_pos) {
-    $('.navbar').fadeOut();
+  if (curr_pos < prev_pos-5) {
+    $('.navbar').fadeOut(250);
   }
 
   else if (curr_pos > prev_pos){
