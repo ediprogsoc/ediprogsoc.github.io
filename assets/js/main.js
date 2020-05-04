@@ -28,7 +28,7 @@ window.addEventListener("scroll", function() {
 
   });
 
-//PARALLAX HERO IMAGE
+//Membership buttons
 
     $(document).ready(function(){
         $(".collapse.show").each(function(){
