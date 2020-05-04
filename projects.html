@@ -70,32 +70,10 @@ ProgSoc
 </div>
 </nav>
   
-      <!-- Full Page Image -->
-  <header class="masthead text-white text-center" style="background: linear-gradient(
-                     rgba(0,0,0, .7), 
-                     rgba(0,0,0, .7)),
-                     url('assets/img/bg-masthead.jpg'); background-size: cover;background-position: right; background-attachment: scroll; background-repeat: no-repeat;">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="">Our Projects</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <!-- <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form> -->
-        </div>
-      </div>
-    </div>
-  </header>
+<!-- Full Page Image -->
+  <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/bg-masthead.jpg" data-speed="0.4">
+  <span style="color:white; font-size:300%; font-weight:lighter; text-shadow: 2px 2px 4px #000000;">Our Projects</span>
+</div>
       
 
 <!--
@@ -138,7 +116,7 @@ id="FB1" aria-labelledby="Info">
 <div class="card mb-3 shadow">
         <div class="row mx-0 no-gutters">
         <div class="col-md-4">
-            <img class="h-100 w-100 rounded" src="assets/img/projects/placeholder.jpg" style="object-fit: cover;">
+            <img class="h-100 w-100 rounded" src="assets/img/projects/flappy_bird.jpg" style="object-fit: cover;">
         </div>
             
         <div class="col-md-8">
@@ -163,11 +141,12 @@ id="FB1" aria-labelledby="Info">
         <div class="card-body">   
            <div class="tab-content">
             <div class="tab-pane active" id="FB1" role="tabpanel" aria-labelledby="Info">
-              <p class="card-text"><a href="/" target="_blank" class="btn btn-dark btn-sm">Download Project</a> Random info</p>
+              <p class="card-text" style = "text-align:center"><a href="/" target="_blank" class="btn btn-dark btn-sm">View Project</a> <br><br> A faithful recreation of the original
+                smash-hit mobile game using the PyGame library in Python 3.</p>
             </div>
              
             <div class="tab-pane" id="FB2" role="tabpanel" aria-labelledby="Technical Specifications">  
-              <p class="card-text">Only use this tab thingy if you have other stuff to say, such as list of collaborators, project story, or list of technology used</p>
+              <p class="card-text">Developed as a group project in the 2017 Programming Society workshops.</p>
             </div>
              
           </div>
@@ -175,6 +154,51 @@ id="FB1" aria-labelledby="Info">
         </div>
     </div>
       </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+  <div class="row mx-0 no-gutters">
+  <div class="col-md-4">
+      <img class="h-100 w-100 rounded" src="assets/img/projects/tic-tac-toe.jpg" style="object-fit: cover;">
+  </div>
+      
+  <div class="col-md-8">
+  <div class="card-header">
+      <h3 class="card-title text-center">Tic-Tac-Toe</h3>
+      <h6 class="card-subtitle mb-2 text-muted text-center">Python | September 2020</h6>
+      <!--d-none for search term-->
+      <h5 class="search-title d-none">python 2020 tic tac toe</h5>
+    
+    <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#FB3" role="tab" aria-controls="Info" aria-selected="true">Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="#FB4" role="tab" aria-controls="Technical Specifications" aria-selected="false">Technical Specifications</a>
+      </li>
+
+    </ul>
+  </div>
+  
+
+  <div class="card-body">   
+     <div class="tab-content">
+      <div class="tab-pane active" id="FB3" role="tabpanel" aria-labelledby="Info">
+        <p class="card-text" style = "text-align:center"><a href="https://github.com/edi-prog-soc/Tic-Tac-Toe" target="_blank" class="btn btn-dark btn-sm">View Project</a> <br><br>A terminal-based version of the classic
+        2 player game, including a very simple AI opponent. This project is the result of 1 semester's worth of the introductory Python workshops for
+      beginners.</p>
+      </div>
+       
+      <div class="tab-pane" id="FB4" role="tabpanel" aria-labelledby="Technical Specifications">  
+        <p class="card-text">This Python project utilises the MiniMax algorithm optimised by alpha-beta pruning to act as an opponent and to introduce 
+          beginners to adversarial search techniques. It also serves a primer to programming paradigms and techniques for those not familiar with the area, as the
+        project is built up in small steps from scratch.</p>
+      </div>
+       
+    </div>
+  </div>
+  </div>
+</div>
+</div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
 
      </div>    
@@ -277,7 +301,7 @@ id="FB1" aria-labelledby="Info">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Custom JS--> 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script><script src="assets/js/parallax.js-1.5.0/parallax.js"></script>
     <script src="assets/js/filter.js"></script>
   </body>
 </html>
