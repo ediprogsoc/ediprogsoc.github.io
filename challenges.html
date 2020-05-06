@@ -95,45 +95,20 @@ ProgSoc
     </div>
   </header>
 
-
-<!--
-
-  _____  ______          _____    __  __ ______
- |  __ \|  ____|   /\   |  __ \  |  \/  |  ____|
- | |__) | |__     /  \  | |  | | | \  / | |__
- |  _  /|  __|   / /\ \ | |  | | | |\/| |  __|
- | | \ \| |____ / ____ \| |__| | | |  | | |____
- |_|  \_\______/_/    \_\_____/  |_|  |_|______|
-
-
-The filter searches by the text within
-cards > class "card-headers" > <h5> with class "search-title".
-
-Include the year in the search-title for search consistency,
-but you can use the Bootstrap class "d-none" to hide them in <span>
-or "invisible" to only hide from non screen readers.
-
-Copy and paste the chunks below to make a new entry.
-The ones closest to the top and under this read me is the newest event.
-
-If you still require help, learn html and remake the site :P
-
-Remember to update the following each time:
-href="#FB1" aria-controls="Info" aria-selected="true">Info</a>
-id="FB1" aria-labelledby="Info">
-
--->
-
+      
 <section class="py-5 container">
-<div class="w-100 px-0">
-    <div class="mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or difficulty (easy, medium, hard)...">
-    </div>
+      
+<div id="myBtnContainer" class="mb-4 text-center">
+<button class="btn btn-primary mb-1 active" onclick="filterSelection('all')">Show All</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Easy')">Easy</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Medium')">Medium</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Hard')">Hard</button>
+</div>
 
-
-<div id="myItems">
+<div class="row">
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow">
+<div class="col-12 filterDiv Easy Medium">
+    <div class="card mb-3 shadow">
         <div class="row mx-0 no-gutters">
         <div class="col-md-4">
             <img class="h-100 w-100 rounded" src="assets/img/challenges/subset.svg" style="object-fit: cover;" alt="">
@@ -143,9 +118,6 @@ id="FB1" aria-labelledby="Info">
         <div class="card-header">
             <h3 class="card-title text-center">Subsets</h3>
             <h6 class="card-subtitle mb-2 text-muted text-center">Easy-Medium</h6>
-            <!--d-none for search term-->
-            <h5 class="search-title d-none">easy medium subsets</h5>
-
           <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" href="#FB1" role="tab" aria-controls="Problem" aria-selected="true">Problem</a>
@@ -178,8 +150,10 @@ id="FB1" aria-labelledby="Info">
         </div>
     </div>
       </div>
+</div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
-
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="col-12 filterDiv Medium">
 <div class="card mb-3 shadow">
   <div class="row mx-0 no-gutters">
   <div class="col-md-4">
@@ -190,9 +164,6 @@ id="FB1" aria-labelledby="Info">
   <div class="card-header">
       <h3 class="card-title text-center">Counting Cards</h3>
       <h6 class="card-subtitle mb-2 text-muted text-center">Medium</h6>
-      <!--d-none for search term-->
-      <h5 class="search-title d-none">medium counting cards</h5>
-
     <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" href="#FB3" role="tab" aria-controls="Problem" aria-selected="true">Problem</a>
@@ -224,8 +195,10 @@ id="FB1" aria-labelledby="Info">
   </div>
 </div>
 </div>
+</div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
-
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="col-12 filterDiv Medium Hard">
 <div class="card mb-3 shadow">
   <div class="row mx-0 no-gutters">
   <div class="col-md-4">
@@ -236,9 +209,6 @@ id="FB1" aria-labelledby="Info">
   <div class="card-header">
       <h3 class="card-title text-center">Maya Calendar</h3>
       <h6 class="card-subtitle mb-2 text-muted text-center">Medium-Hard</h6>
-      <!--d-none for search term-->
-      <h5 class="search-title d-none">medium hard maya calendar</h5>
-
     <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" href="#FB5" role="tab" aria-controls="Problem" aria-selected="true">Problem</a>
@@ -294,6 +264,7 @@ id="FB1" aria-labelledby="Info">
   </div>
 </div>
 </div>
+</div>
 <!--
 TRANSMISSION RECEIVED
 
@@ -301,15 +272,10 @@ T͢h͏e timę has co̴me f͜ơr͏ y͜o͘u ͢to ŗe͡cla͞ìm our͝ ̴fǫrm�
 -->
 
 <!--/////////////////////////////////////////////////////////////////////////////-->
-
-     </div>
-
-
-</div>
-
-
-
-      </section>
+</div>     
+      
+</section>      
+      
 
 
 

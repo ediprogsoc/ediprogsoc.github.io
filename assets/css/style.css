@@ -41,11 +41,13 @@ h2 {padding: 35px 0px 0px;}
       margin-right: 0.5rem;
     }
 
+/*
     .btn {
       width:100%;
       border-radius: 0px;
       font-size: 24px;
     }
+*/
 
     .btn:hover {
       filter: brightness(95%);

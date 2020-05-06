@@ -94,87 +94,18 @@ ProgSoc
     </div>
   </header>
 
-
-<!--
-
-  _____  ______          _____    __  __ ______
- |  __ \|  ____|   /\   |  __ \  |  \/  |  ____|
- | |__) | |__     /  \  | |  | | | \  / | |__
- |  _  /|  __|   / /\ \ | |  | | | |\/| |  __|
- | | \ \| |____ / ____ \| |__| | | |  | | |____
- |_|  \_\______/_/    \_\_____/  |_|  |_|______|
-
-
-The filter searches by the text within
-cards > class "card-headers" > <h5> with class "search-title".
-
-Include the year in the search-title for search consistency,
-but you can use the Bootstrap class "d-none" to hide them in <span>
-or "invisible" to only hide from non screen readers.
-
-Copy and paste the chunks below to make a new entry.
-The ones closest to the top and under this read me is the newest event.
-
-If you still require help, learn html and remake the site :P
-
-Remember to update the following each time:
-href="#FB1" aria-controls="Info" aria-selected="true">Info</a>
-id="FB1" aria-labelledby="Info">
-
--->
-
 <section class="py-5 container">
-<div class="w-100 px-0">
-    <div class="mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or year...">
-    </div>
+      
+<div id="myBtnContainer" class="mb-4 text-center">
+<button class="btn btn-primary mb-1 active" onclick="filterSelection('all')"> Show All</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Game')"> Game</button>
+<button class="btn btn-primary mb-1" disabled onclick="filterSelection('Utility')"> Utility</button>
+</div>
 
-
-<div id="myItems">
+<div class="row">
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow">
-        <div class="row mx-0 no-gutters">
-        <div class="col-md-4">
-            <img class="h-100 w-100 rounded" src="assets/img/projects/flappy_bird.jpg" style="object-fit: cover;" alt="">
-        </div>
-
-        <div class="col-md-8">
-        <div class="card-header">
-            <h3 class="card-title text-center">Flappy Bird</h3>
-            <h6 class="card-subtitle mb-2 text-muted text-center">PyGame | May 2017</h6>
-            <!--d-none for search term-->
-            <h5 class="search-title d-none">python pygame 2017 flappy bird</h5>
-
-          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" href="#FB1" role="tab" aria-controls="Info" aria-selected="true">Info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="#FB2" role="tab" aria-controls="Technical Specifications" aria-selected="false">Technical Specifications</a>
-            </li>
-
-          </ul>
-        </div>
-
-
-        <div class="card-body">
-           <div class="tab-content">
-            <div class="tab-pane active" id="FB1" role="tabpanel" aria-labelledby="Info">
-              <p class="card-text" style = "text-align:center"><a href="/" target="_blank" class="btn btn-dark btn-sm">View Project</a> <br><br> A faithful recreation of the original
-                smash-hit mobile game using the PyGame library in Python 3.</p>
-            </div>
-
-            <div class="tab-pane" id="FB2" role="tabpanel" aria-labelledby="Technical Specifications">
-              <p class="card-text">Developed as a group project in the 2017 Programming Society workshops.</p>
-            </div>
-
-          </div>
-        </div>
-        </div>
-    </div>
-      </div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow">
+<div class="col-12 filterDiv Game">
+    <div class="card mb-3 shadow">
   <div class="row mx-0 no-gutters">
   <div class="col-md-4">
       <img class="h-100 w-100 rounded" src="assets/img/projects/tic-tac-toe.jpg" style="object-fit: cover;" alt="">
@@ -184,9 +115,6 @@ id="FB1" aria-labelledby="Info">
   <div class="card-header">
       <h3 class="card-title text-center">Tic-Tac-Toe</h3>
       <h6 class="card-subtitle mb-2 text-muted text-center">Python | September 2020</h6>
-      <!--d-none for search term-->
-      <h5 class="search-title d-none">python 2020 tic tac toe</h5>
-
     <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" href="#FB3" role="tab" aria-controls="Info" aria-selected="true">Info</a>
@@ -202,7 +130,7 @@ id="FB1" aria-labelledby="Info">
   <div class="card-body">
      <div class="tab-content">
       <div class="tab-pane active" id="FB3" role="tabpanel" aria-labelledby="Info">
-        <p class="card-text" style = "text-align:center"><a href="https://github.com/edi-prog-soc/Tic-Tac-Toe" target="_blank" class="btn btn-dark btn-sm">View Project</a> <br><br>A terminal-based version of the classic
+        <p class="card-text" style = "text-align:center"><a href="https://github.com/edi-prog-soc/Tic-Tac-Toe" target="_blank" class="btn btn-dark btn-sm w-100" style="border-radius: 0px;font-size: 24px;">View Project</a> <br><br>A terminal-based version of the classic
         2 player game, including a very simple AI opponent. This project is the result of 1 semester's worth of the introductory Python workshops for
       beginners.</p>
       </div>
@@ -218,14 +146,53 @@ id="FB1" aria-labelledby="Info">
   </div>
 </div>
 </div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-
-     </div>
 </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="col-12 filterDiv Game">
+    <div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/projects/flappy_bird.jpg" style="object-fit: cover;" alt="">
+        </div>
+
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">Flappy Bird</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">PyGame | May 2017</h6>
+          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#FB1" role="tab" aria-controls="Info" aria-selected="true">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#FB2" role="tab" aria-controls="Technical Specifications" aria-selected="false">Technical Specifications</a>
+            </li>
+
+          </ul>
+        </div>
 
 
+        <div class="card-body">
+           <div class="tab-content">
+            <div class="tab-pane active" id="FB1" role="tabpanel" aria-labelledby="Info">
+              <p class="card-text" style = "text-align:center"><a href="/" target="_blank" class="btn btn-dark btn-sm w-100" style="border-radius: 0px;font-size: 24px;">MISSING LINK!!!!!!!!!!!!!!!!!</a> <br><br> A faithful recreation of the original
+                smash-hit mobile game using the PyGame library in Python 3.</p>
+            </div>
 
-      </section>
+            <div class="tab-pane" id="FB2" role="tabpanel" aria-labelledby="Technical Specifications">
+              <p class="card-text">Developed as a group project in the 2017 Programming Society workshops.</p>
+            </div>
+
+          </div>
+        </div>
+        </div>
+    </div>
+      </div>
+    </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+</div>     
+      
+</section>
 
 
 
