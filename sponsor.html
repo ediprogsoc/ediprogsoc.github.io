@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/sponsor.css">
     <!-- Font Awesome -->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Lozad.js -->  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
   </head>
@@ -155,7 +157,8 @@ ProgSoc
   <div class="container-fluid p-0">
     <div class="row no-gutters">
 
-      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg'); background-position: center center;"></div>
+<!--      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg'); background-position: center center;"></div>-->
+      <div class="lozad col-lg-6 order-lg-2 text-white showcase-img" data-background-image="assets/img/bg-showcase-1.jpg" style="background-position: center center"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text">
         <h2>Why ProgSoc?</h2>
         <p class="lead mb-0">The Programming Society (ProgSoc) at the University of Edinburgh was founded in
@@ -168,7 +171,8 @@ break into the workplace with newfound skills.</p>
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/sponsors/hwh.jpg'); background-position: center center;"></div>
+<!--      <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/sponsors/hwh.jpg'); background-position: center center;"></div>-->
+    <div class="lozad col-lg-6 text-white showcase-img" data-background-image="assets/img/sponsors/hwh.jpg" style="background-position: center center"></div>
       <div class="col-lg-6 my-auto showcase-text">
         <h2>What events do we run?</h2>
         <p class="lead mb-0">We normally run networking events throughout the semesters and weekly lessons
@@ -339,5 +343,6 @@ competitive programming.</p>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Custom JS-->
     <script src="assets/js/parallax.js"></script><script src="assets/js/main.js"></script>
+    <script src="assets/js/lozad.js"></script>
   </body>
 </html>
