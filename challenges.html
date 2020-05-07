@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/landingpage.css">
     <!-- Font Awesome -->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Lozad.js -->  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 
@@ -40,9 +42,6 @@ ProgSoc
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-    </li>
       <li class="nav-item">
       <a class="nav-link" href="committee.html">Committee</a>
     </li>
@@ -50,7 +49,7 @@ ProgSoc
       <a class="nav-link" href="projects.html">Projects</a>
     </li>
       <li class="nav-item">
-      <a class="nav-link" href="challenges.html">Challenges</a>
+      <a class="nav-link text-primary" href="challenges.html">Challenges</a>
     </li>
       <li class="nav-item">
       <a class="nav-link" href="membership.html">Membership</a>
@@ -98,57 +97,29 @@ ProgSoc
     </div>
   </header>
 
-
-<!--
-
-  _____  ______          _____    __  __ ______
- |  __ \|  ____|   /\   |  __ \  |  \/  |  ____|
- | |__) | |__     /  \  | |  | | | \  / | |__
- |  _  /|  __|   / /\ \ | |  | | | |\/| |  __|
- | | \ \| |____ / ____ \| |__| | | |  | | |____
- |_|  \_\______/_/    \_\_____/  |_|  |_|______|
-
-
-The filter searches by the text within
-cards > class "card-headers" > <h5> with class "search-title".
-
-Include the year in the search-title for search consistency,
-but you can use the Bootstrap class "d-none" to hide them in <span>
-or "invisible" to only hide from non screen readers.
-
-Copy and paste the chunks below to make a new entry.
-The ones closest to the top and under this read me is the newest event.
-
-If you still require help, learn html and remake the site :P
-
-Remember to update the following each time:
-href="#FB1" aria-controls="Info" aria-selected="true">Info</a>
-id="FB1" aria-labelledby="Info">
-
--->
-
+      
 <section class="py-5 container">
-<div class="w-100 px-0">
-    <div class="mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or difficulty (easy, medium, hard)...">
-    </div>
+      
+<div id="myBtnContainer" class="mb-4 text-center">
+<button class="btn btn-primary mb-1 active" onclick="filterSelection('all')">Show All</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Easy')">Easy</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Medium')">Medium</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Hard')">Hard</button>
+</div>
 
-
-<div id="myItems">
+<div class="row">
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow">
+<div class="col-12 filterDiv Easy Medium">
+    <div class="card mb-3 shadow">
         <div class="row mx-0 no-gutters">
         <div class="col-md-4">
-            <img class="h-100 w-100 rounded" src="assets/img/challenges/subset.svg" style="object-fit: cover;">
+            <img class="h-100 w-100 rounded lozad" src="assets/img/challenges/subset.svg" style="object-fit: cover;" alt="">
         </div>
 
         <div class="col-md-8">
         <div class="card-header">
             <h3 class="card-title text-center">Subsets</h3>
             <h6 class="card-subtitle mb-2 text-muted text-center">Easy-Medium</h6>
-            <!--d-none for search term-->
-            <h5 class="search-title d-none">easy medium subsets</h5>
-
           <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" href="#FB1" role="tab" aria-controls="Problem" aria-selected="true">Problem</a>
@@ -181,21 +152,20 @@ id="FB1" aria-labelledby="Info">
         </div>
     </div>
       </div>
+</div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
-
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="col-12 filterDiv Medium">
 <div class="card mb-3 shadow">
   <div class="row mx-0 no-gutters">
   <div class="col-md-4">
-      <img class="h-100 w-100 rounded" src="assets/img/challenges/cards.jpg" style="object-fit: cover;">
+      <img class="h-100 w-100 rounded lozad" src="assets/img/challenges/cards.jpg" style="object-fit: cover;" alt="">
   </div>
 
   <div class="col-md-8">
   <div class="card-header">
       <h3 class="card-title text-center">Counting Cards</h3>
       <h6 class="card-subtitle mb-2 text-muted text-center">Medium</h6>
-      <!--d-none for search term-->
-      <h5 class="search-title d-none">medium counting cards</h5>
-
     <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" href="#FB3" role="tab" aria-controls="Problem" aria-selected="true">Problem</a>
@@ -227,21 +197,20 @@ id="FB1" aria-labelledby="Info">
   </div>
 </div>
 </div>
+</div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
-
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="col-12 filterDiv Medium Hard">
 <div class="card mb-3 shadow">
   <div class="row mx-0 no-gutters">
   <div class="col-md-4">
-      <img class="h-100 w-100 rounded" src="assets/img/challenges/maya.jpg" style="object-fit: cover;">
+      <img class="h-100 w-100 rounded lozad" src="assets/img/challenges/maya.jpg" style="object-fit: cover;" alt="">
   </div>
 
   <div class="col-md-8">
   <div class="card-header">
       <h3 class="card-title text-center">Maya Calendar</h3>
       <h6 class="card-subtitle mb-2 text-muted text-center">Medium-Hard</h6>
-      <!--d-none for search term-->
-      <h5 class="search-title d-none">medium hard maya calendar</h5>
-
     <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" href="#FB5" role="tab" aria-controls="Problem" aria-selected="true">Problem</a>
@@ -297,6 +266,7 @@ id="FB1" aria-labelledby="Info">
   </div>
 </div>
 </div>
+</div>
 <!--
 TRANSMISSION RECEIVED
 
@@ -304,15 +274,10 @@ T͢h͏e timę has co̴me f͜ơr͏ y͜o͘u ͢to ŗe͡cla͞ìm our͝ ̴fǫrm�
 -->
 
 <!--/////////////////////////////////////////////////////////////////////////////-->
-
-     </div>
-
-
-</div>
-
-
-
-      </section>
+</div>     
+      
+</section>      
+      
 
 
 
@@ -346,57 +311,51 @@ T͢h͏e timę has co̴me f͜ơr͏ y͜o͘u ͢to ŗe͡cla͞ìm our͝ ̴fǫrm�
 
 
 
- <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <!-- <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul> -->
-          <p class="text-muted small mb-4 mb-lg-0">&copy; <script>document.write( new Date().getFullYear() );</script> UoE Programming Society</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="https://www.facebook.com/programmingsociety/" target="_blank">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="https://github.com/edi-prog-soc" target="_blank">
-                <i class="fab fa-github fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="https://www.linkedin.com/company/edinburgh-university-programming-society/" target="_blank">
-                <i class="fab fa-linkedin fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="mailto:ediprogsoc@gmail.com" target="_blank">
-                <i class="far fa-envelope fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="footer bg-light">
+<div class="container">
+<div class="row">
+<!--///////////////////////////////////////////////////////////////////////////-->
+<div class="h-100 col-lg-4 text-center my-auto order-lg-2">
+<div class="row mb-4 mb-lg-0">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder.png" alt="">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder2.png" alt="">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder.png" alt="">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder2.png" alt="">
+</div>
+</div>
+<!--///////////////////////////////////////////////////////////////////////////-->
+<div class="col-lg-4 h-100 text-center text-lg-left my-auto order-lg-1">
+<p class="text-muted small mb-4 mb-lg-0">&copy; <script>document.write( new Date().getFullYear() );</script> UoE Programming Society</p>
+</div>
+<!--///////////////////////////////////////////////////////////////////////////-->
+<div class="col-lg-4 h-100 text-center text-lg-right my-auto order-lg-3">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mr-3">
+<a href="https://www.facebook.com/programmingsociety/" target="_blank">
+<i class="fab fa-facebook fa-2x fa-fw"></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href="https://github.com/edi-prog-soc" target="_blank">
+<i class="fab fa-github fa-2x fa-fw"></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href="https://www.linkedin.com/company/edinburgh-university-programming-society/" target="_blank">
+<i class="fab fa-linkedin fa-2x fa-fw"></i>
+</a>
+</li>
+<li class="list-inline-item">
+<a href="mailto:ediprogsoc@gmail.com" target="_blank">
+<i class="far fa-envelope fa-2x fa-fw"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -409,5 +368,6 @@ T͢h͏e timę has co̴me f͜ơr͏ y͜o͘u ͢to ŗe͡cla͞ìm our͝ ̴fǫrm�
     <!-- Custom JS-->
     <script src="assets/js/parallax.js"></script><script src="assets/js/main.js"></script>
     <script src="assets/js/filter.js"></script>
+    <script src="assets/js/lozad.js"></script>
   </body>
 </html>

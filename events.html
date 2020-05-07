@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/events.css">
     <!-- Font Awesome -->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Lozad.js -->  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 
@@ -40,9 +42,6 @@ ProgSoc
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
    <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-    </li>
       <li class="nav-item">
       <a class="nav-link" href="committee.html">Committee</a>
     </li>
@@ -56,7 +55,7 @@ ProgSoc
       <a class="nav-link" href="membership.html">Membership</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="events.html">Events</a>
+      <a class="nav-link text-primary" href="events.html">Events</a>
     </li>
       <li class="nav-item">
       <a class="nav-link" href="faq.html">FAQ</a>
@@ -99,78 +98,117 @@ ProgSoc
   </header>
 
 
-
-
-<section class="py-5">
-<div class="container">
-  <div class="row mx-0">
-    <div class="col-sm-12 mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or year...">
-    </div>
-
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<section class="py-5 container">
+      
+<div id="myBtnContainer" class="mb-4 text-center">
+<button class="btn btn-primary mb-1 active" onclick="filterSelection('all')"> Show All</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Regular')"> Regular Events</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('Major')"> Major Events</button>
 </div>
 
-<div class="row mx-0" id="myItems">
-<div class="card-columns">
-
-
+<div class="row">
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Major">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/2020_hwh.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Early 2021</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2021</span></h5>
+<p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <span class="badge badge-pill badge-primary">Upcoming</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
 <!--
-
-  _____  ______          _____    __  __ ______
- |  __ \|  ____|   /\   |  __ \  |  \/  |  ____|
- | |__) | |__     /  \  | |  | | | \  / | |__
- |  _  /|  __|   / /\ \ | |  | | | |\/| |  __|
- | | \ \| |____ / ____ \| |__| | | |  | | |____
- |_|  \_\______/_/    \_\_____/  |_|  |_|______|
-
-
-The filter searches by the text within
-cards > class "card-headers" > <h5> with class "search-title".
-
-Include the year in the search-title for search consistency,
-but you can use the Bootstrap class "d-none" to hide them in <span>
-or "invisible" to only hide from non screen readers.
-
-Copy and paste the chunks below to make a new entry.
-The ones closest to the top and under this read me is the newest event.
-
-If you still require help, learn html and remake the site :P
-
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
 -->
-
-
-<!--Hello World Hack 2021-->
-
-        <div class="card border-0 my-4 cool-hover">
-            <div class="card-header d-none"><h5 class="search-title">Hello World Hack 2021</h5></div>
-          <img class="card-img-top" src="assets/img/events/2020_hwh.jpg" alt="">
-          <div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">tbc<span class="d-block">tbc</span></div>
-          <h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2021</span></h5>
-          <p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <span class="badge badge-pill badge-primary">Upcoming</span></p>
-          <div class="card-footer border-0 p-0" style="background-color: white">
-          <a href="https://www.facebook.com/events/2537917466483989/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
-          <a href="https://helloworldhack.com/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>
-          </div>
-        </div>
-
-
-
-<!------------------------->
-
-<!--Hello World Hack 2020-->
-
-        <div class="card border-0 my-4 cool-hover">
-        <div class="card-header d-none"><h5 class="search-title">Hello World Hack 2020</h5></div>
-          <img class="card-img-top" src="assets/img/events/2020_hwh.jpg" alt="">
-          <div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">Feb<span class="d-block">8-9</span></div>
-          <h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2020</span></h5>
-          <p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <span class="badge badge-pill badge-dark">Past Event</span></p>
-          <div class="card-footer border-0 p-0" style="background-color: white">
-          <a href="https://www.facebook.com/events/2537917466483989/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
-          <a href="https://helloworldhack.com/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>
-          </div>
-        </div>
-
+</div>
+</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Regular">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/code.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Early 2021</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Beginner's Guide: <span class="lead">Web Development</span></h5>
+<p class="mt-3">Join the developers of this site as they explain the basics of front-end web development. <span class="badge badge-pill badge-primary">Upcoming</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
+<!--
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
+-->
+</div>
+</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Regular">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/job.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Early 2021</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Workshop: <span class="lead">Internship Preparation</span></h5>
+<p class="mt-3">Prepare for a career in the tech or business world. <span class="badge badge-pill badge-primary">Upcoming</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
+<!--
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
+-->
+</div>
+</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Regular">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/machine.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Late 2020</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Beginner's Guide: <span class="lead">Machine Learning</span></h5>
+<p class="mt-3">Fascinated by machine learning but find it too daunting? You're in luck! <span class="badge badge-pill badge-primary">Upcoming</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
+<!--
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
+-->
+</div>
+</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Regular">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/job.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Late 2020</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Workshop: <span class="lead">Internship Preparation</span></h5>
+<p class="mt-3">Prepare for a career in the tech or business world. <span class="badge badge-pill badge-primary">Upcoming</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
+<!--
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
+<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
+-->
+</div>
+</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Major">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/2020_hwh.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">Feb<span class="d-block">8-9</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2020</span></h5>
+<p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <span class="badge badge-pill badge-dark">Past Event</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
+<a href="https://www.facebook.com/events/2537917466483989/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
+<a href="https://jhowewowe.github.io/Hello-World-Hack-2020/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>
+</div>
+</div>
+</div>
 <!--
 TRANSMISSION RECEIVED
 
@@ -188,35 +226,24 @@ F̵ir͡st͞ the̵y̛ c̸a̛m͘e f̨o̶r ̀the͠ ͝NHS,͏ ̴an̛d͝ I ҉did҉ ̡n
 
 O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
 -->
-
-<!------------------------->
-
-<!--Hello World Hack 2019-->
-
-        <div class="card border-0 my-4 cool-hover">
-            <div class="card-header d-none"><h5 class="search-title">Hello World Hack 2019</h5></div>
-          <img class="card-img-top" src="assets/img/events/2019_hwh.jpg" alt="">
-          <div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">30-31</span></div>
-          <h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2019</span></h5>
-          <p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <span class="badge badge-pill badge-dark">Past Event</span></p>
-          <div class="card-footer border-0 p-0" style="background-color: white">
-          <a href="https://www.facebook.com/events/608667819564372/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
-          <a href="https://helloworldhack.com/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>
-          </div>
-        </div>
-
-<!------------------------->
-
-
-
-
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->  
+<div class="col-12 col-md-6  col-lg-4 filterDiv Major">
+<div class="card border-0 my-4 cool-hover">
+<img class="card-img-top rounded lozad" src="assets/img/events/2019_hwh.jpg" alt="">
+<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">30-31</span></div>
+<h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2019</span></h5>
+<p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <span class="badge badge-pill badge-dark">Past Event</span></p>
+<div class="card-footer border-0 p-0" style="background-color: white">
+<a href="https://www.facebook.com/events/608667819564372/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
+<!--<a href="https://helloworldhack.com/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>-->
 </div>
 </div>
 </div>
-
-
-      </section>
-
+<!--/////////////////////////////////////////////////////////////////////////////-->
+</div>     
+      
+</section>
 
 
       <!-- Call to Action -->
@@ -249,57 +276,51 @@ O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
 
 
 
- <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <!-- <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul> -->
-          <p class="text-muted small mb-4 mb-lg-0">&copy; <script>document.write( new Date().getFullYear() );</script> UoE Programming Society</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="https://www.facebook.com/programmingsociety/" target="_blank">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="https://github.com/edi-prog-soc" target="_blank">
-                <i class="fab fa-github fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="https://www.linkedin.com/company/edinburgh-university-programming-society/" target="_blank">
-                <i class="fab fa-linkedin fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="mailto:ediprogsoc@gmail.com" target="_blank">
-                <i class="far fa-envelope fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="footer bg-light">
+<div class="container">
+<div class="row">
+<!--///////////////////////////////////////////////////////////////////////////-->
+<div class="h-100 col-lg-4 text-center my-auto order-lg-2">
+<div class="row mb-4 mb-lg-0">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder.png" alt="">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder2.png" alt="">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder.png" alt="">
+<img class="col-3 my-auto" src="assets/img/sponsors/placeholder2.png" alt="">
+</div>
+</div>
+<!--///////////////////////////////////////////////////////////////////////////-->
+<div class="col-lg-4 h-100 text-center text-lg-left my-auto order-lg-1">
+<p class="text-muted small mb-4 mb-lg-0">&copy; <script>document.write( new Date().getFullYear() );</script> UoE Programming Society</p>
+</div>
+<!--///////////////////////////////////////////////////////////////////////////-->
+<div class="col-lg-4 h-100 text-center text-lg-right my-auto order-lg-3">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mr-3">
+<a href="https://www.facebook.com/programmingsociety/" target="_blank">
+<i class="fab fa-facebook fa-2x fa-fw"></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href="https://github.com/edi-prog-soc" target="_blank">
+<i class="fab fa-github fa-2x fa-fw"></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href="https://www.linkedin.com/company/edinburgh-university-programming-society/" target="_blank">
+<i class="fab fa-linkedin fa-2x fa-fw"></i>
+</a>
+</li>
+<li class="list-inline-item">
+<a href="mailto:ediprogsoc@gmail.com" target="_blank">
+<i class="far fa-envelope fa-2x fa-fw"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -312,5 +333,6 @@ O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
     <!-- Custom JS-->
     <script src="assets/js/parallax.js"></script><script src="assets/js/main.js"></script>
     <script src="assets/js/filter.js"></script>
+    <script src="assets/js/lozad.js"></script>
   </body>
 </html>
