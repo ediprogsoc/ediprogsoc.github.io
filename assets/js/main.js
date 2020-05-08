@@ -6,7 +6,6 @@ window.addEventListener("scroll", function() {
 
   curr_pos = document.body.getBoundingClientRect().top;
 
-  console.log(curr_pos, prev_pos);
 
   if (curr_pos < prev_pos-5) {
     $('.navbar').fadeOut(250);

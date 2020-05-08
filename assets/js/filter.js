@@ -14,7 +14,7 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "d-none");
   }
 }
-filterDate("all");
+filterDate("upcoming");
 function filterDate(timeFrame){
   var x,i,t;
   if (timeFrame == "upcoming"){
@@ -28,7 +28,6 @@ function filterDate(timeFrame){
   x = document.getElementsByClassName("filterDiv");
   for (i = 0; i < x.length; i++) {
     w3AddClass(x[i], "d-none");
-    console.log(x[i].className.split(" ")[0]);
     var eventDate = Date.parse(x[i].className.split(" ")[0]);
     if (t*(eventDate-curr.getTime()) >= 0) w3RemoveClass(x[i], "d-none");
   }
