@@ -29,6 +29,7 @@ function filterDate(timeFrame){
     w3AddClass(x[i], "d-none");
     w3RemoveClass(x[i],"vis")
     var eventDate = Date.parse(x[i].className.split(" ")[0]);
+    console.log(eventDate-curr.getTime());
     if (t*(eventDate-curr.getTime()) >= 0) {
       w3RemoveClass(x[i], "d-none");
       w3AddClass(x[i],"vis");
