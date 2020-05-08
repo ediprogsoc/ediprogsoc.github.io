@@ -27,8 +27,21 @@ function filterDate(timeFrame){
   x = document.getElementsByClassName("filterDiv");
   for (i = 0; i < x.length; i++) {
     w3AddClass(x[i], "d-none");
+    w3RemoveClass(x[i],"vis")
     var eventDate = Date.parse(x[i].className.split(" ")[0]);
-    if (t*(eventDate-curr.getTime()) >= 0) w3RemoveClass(x[i], "d-none");
+    if (t*(eventDate-curr.getTime()) >= 0) {
+      w3RemoveClass(x[i], "d-none");
+      w3AddClass(x[i],"vis");
+    }
+  }
+}
+
+function filterPill(event_type){
+  var x,i,t;
+  x = document.getElementsByClassName("filterDiv vis");
+  for (i = 0; i < x.length; i++) {
+    w3AddClass(x[i], "d-none");
+    if (x[i].className.indexOf(event_type) > -1) w3RemoveClass(x[i], "d-none");
   }
 }
 
