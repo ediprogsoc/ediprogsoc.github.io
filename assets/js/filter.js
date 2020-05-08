@@ -14,7 +14,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "d-none");
   }
 }
-filterDate("upcoming");
 function filterDate(timeFrame){
   var x,i,t;
   if (timeFrame == "upcoming"){
