@@ -4,8 +4,6 @@ $('#bologna-list a').on('click', function (e) {
   $(this).tab('show')
 })
 
-//Filter
-filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -14,6 +12,25 @@ function filterSelection(c) {
   for (i = 0; i < x.length; i++) {
     w3AddClass(x[i], "d-none");
     if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "d-none");
+  }
+}
+filterDate("all");
+function filterDate(timeFrame){
+  var x,i,t;
+  if (timeFrame == "upcoming"){
+    t = 1;
+  } else if (timeFrame == "past"){
+    t = -1;
+  } else{
+    t = 0;
+  }
+  var curr = new Date();
+  x = document.getElementsByClassName("filterDiv");
+  for (i = 0; i < x.length; i++) {
+    w3AddClass(x[i], "d-none");
+    console.log(x[i].className.split(" ")[0]);
+    var eventDate = Date.parse(x[i].className.split(" ")[0]);
+    if (t*(eventDate-curr.getTime()) >= 0) w3RemoveClass(x[i], "d-none");
   }
 }
 
