@@ -14,8 +14,8 @@
 - [ ] ~~\(Optional) [Add skip links and landmark regions for screen readers](https://web.dev/bypass/?utm_source=lighthouse&utm_medium=devtools)~~
 
 ###### Github Pages
-- [ ] Go to repo > settings > GitHub Pages to set up GitHub Pages.
-- [ ] If you only want a github.io site go to settings and tick https. You're done!
+- [X] Go to repo > settings > GitHub Pages to set up GitHub Pages.
+- [X] If you only want a github.io site go to settings and tick https. You're done!
 
 ###### HTML errors & vulnerabilities
 - [ ] ~~Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors~~
