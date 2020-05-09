@@ -2,8 +2,8 @@
 
 ###### Misc Cleanup and Optimisation
 - [X] Ensure you have a 404 page
-- [ ] Replace all `index.html` links with `/` (url is `/` instead of `/index.html`)
-- [ ] For all other links, remove the `.html` portion of the link (url is `/subdirectory` instead of `/subdirectory.html`)
+- [X] Replace all `index.html` links with `/` (url is `/` instead of `/index.html`)
+- [X] For all other links, remove the `.html` portion of the link (url is `/subdirectory` instead of `/subdirectory.html`)
 - [ ] \(Optional) [Update favicons](https://favicon.io/)
 - [X] \(Optional) Update meta descriptions and titles
 - [ ] ~~\(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)~~
@@ -14,8 +14,8 @@
 - [ ] ~~\(Optional) [Add skip links and landmark regions for screen readers](https://web.dev/bypass/?utm_source=lighthouse&utm_medium=devtools)~~
 
 ###### Github Pages
-- [ ] Go to repo > settings > GitHub Pages to set up GitHub Pages.
-- [ ] If you only want a github.io site go to settings and tick https. You're done!
+- [X] Go to repo > settings > GitHub Pages to set up GitHub Pages.
+- [X] If you only want a github.io site go to settings and tick https. You're done!
 
 ###### HTML errors & vulnerabilities
 - [ ] ~~Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors~~
