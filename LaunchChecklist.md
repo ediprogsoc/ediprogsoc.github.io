@@ -5,25 +5,25 @@
 - [ ] Replace all `index.html` links with `/` (url is `/` instead of `/index.html`)
 - [ ] For all other links, remove the `.html` portion of the link (url is `/subdirectory` instead of `/subdirectory.html`)
 - [ ] \(Optional) [Update favicons](https://favicon.io/)
-- [ ] \(Optional) Update meta descriptions and titles
-- [ ] \(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)
+- [X] \(Optional) Update meta descriptions and titles
+- [ ] ~~\(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)~~
 - [ ] \(Optional) [Optimise image sizes](https://imgbot.net/)
 - [ ] \(Optional) [Add Webp image compatibility](https://web.dev/serve-images-webp/)
-- [ ] \(Optional) [Implement image lazy loading](https://github.com/ApoorvSaxena/lozad.js)
-- [ ] \(Optional) Use [`env()`](https://developer.mozilla.org/en-US/docs/Web/CSS/env) to deal with [notched phones](https://bubblin.io/blog/notch)
-- [ ] \(Optional) [Add skip links and landmark regions for screen readers](https://web.dev/bypass/?utm_source=lighthouse&utm_medium=devtools)
+- [X] \(Optional) [Implement image lazy loading](https://addyosmani.com/blog/lazy-loading/)
+- [ ] ~~\(Optional) Use [`env()`](https://developer.mozilla.org/en-US/docs/Web/CSS/env) to deal with [notched phones](https://bubblin.io/blog/notch)~~
+- [ ] ~~\(Optional) [Add skip links and landmark regions for screen readers](https://web.dev/bypass/?utm_source=lighthouse&utm_medium=devtools)~~
 
 ###### Github Pages
 - [ ] Go to repo > settings > GitHub Pages to set up GitHub Pages.
 - [ ] If you only want a github.io site go to settings and tick https. You're done!
 
 ###### HTML errors & vulnerabilities
-- [ ] Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors
+- [ ] ~~Use an [HTML Checker](https://validator.w3.org/nu/) to find and resolve any HTML warnings or errors~~
 - [ ] Use Google Lighthouse to identify & update old dependencies with known vulnerabilities
 
 ###### Domain Provider
 - [ ] Grab a domain
-- [ ] \(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)
+- [ ] ~~\(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)~~
 - [ ] Go to Github Pages settings and add the new custom domain
 
 ###### Option 1 - Domain Provider > GitHub Pages Hosting
@@ -32,7 +32,7 @@
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
 - [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
 
-###### Option 2 - Domain Provider > Cloudflare Analytics/ Cacheing/ Minification etc > GitHub Pages Hosting
+###### ~~Option 2 - Domain Provider > Cloudflare Analytics/ Cacheing/ Minification etc > GitHub Pages Hosting~~
 - [ ] Go to Cloudflare and add a new website (with your new domain)
 - [ ] When asked, go back to domain provider and input the custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`
 - [ ] Go back to Cloudflare and...
