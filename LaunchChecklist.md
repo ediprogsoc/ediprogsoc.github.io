@@ -31,6 +31,7 @@
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
 - [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
+- [ ] Go back to GitHub Pages and add custom domain
 
 ###### ~~Option 2 - Domain Provider > Cloudflare Analytics/ Cacheing/ Minification etc > GitHub Pages Hosting~~
 - [ ] Go to Cloudflare and add a new website (with your new domain)
@@ -40,6 +41,7 @@
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
 - [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
 - [ ] Go to SSL settings and set to Flexible (or full, if it works for you)
+- [ ] Go back to GitHub Pages and add custom domain
 
 ###### Sitemap & Robots.txt
 - [ ] Use a [Sitemap Generator](https://www.xml-sitemaps.com/), edit output to remove any sites that you want hidden (404 page etc)
