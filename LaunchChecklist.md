@@ -2,8 +2,8 @@
 
 ###### Misc Cleanup and Optimisation
 - [X] Ensure you have a 404 page
-- [ ] Replace all `index.html` links with `/` (url is `/` instead of `/index.html`)
-- [ ] For all other links, remove the `.html` portion of the link (url is `/subdirectory` instead of `/subdirectory.html`)
+- [X] Replace all `index.html` links with `/` (url is `/` instead of `/index.html`)
+- [X] For all other links, remove the `.html` portion of the link (url is `/subdirectory` instead of `/subdirectory.html`)
 - [ ] \(Optional) [Update favicons](https://favicon.io/)
 - [X] \(Optional) Update meta descriptions and titles
 - [ ] ~~\(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)~~
