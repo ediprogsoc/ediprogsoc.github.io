@@ -24,22 +24,22 @@
 ###### Domain Provider
 - [X] Grab a domain
 - [ ] ~~\(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)~~
-- [ ] Go to Github Pages settings and add the new custom domain
+- [X] Go to Github Pages settings and add the new custom domain
 
-###### Option 1 - Domain Provider > GitHub Pages Hosting
+~~###### Option 1 - Domain Provider > GitHub Pages Hosting~~
 - [ ] Go to domain provider DNS settings and...
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
 - [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
 
 ###### Option 2 - Domain Provider > Cloudflare Analytics/ Cacheing/ Minification etc > GitHub Pages Hosting
-- [ ] Go to Cloudflare and add a new website (with your new domain)
-- [ ] When asked, go back to domain provider and input the custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`
-- [ ] Go back to Cloudflare and...
-- [ ] Add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
-- [ ] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
-- [ ] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
-- [ ] Go to SSL settings and set to Flexible (or full, if it works for you)
+- [X] Go to Cloudflare and add a new website (with your new domain)
+- [X] When asked, go back to domain provider and input the custom DNS `adelaide.ns.cloudflare.com` `chad.ns.cloudflare.com`
+- [X] Go back to Cloudflare and...
+- [X] Add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
+- [X] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
+- [X] \(If non-existent) add a record Type `CNAME` Name `www` Content `your domain`
+- [X] Go to SSL settings and set to Flexible (or full, if it works for you)
 
 ###### Sitemap & Robots.txt
 - [ ] Use a [Sitemap Generator](https://www.xml-sitemaps.com/), edit output to remove any sites that you want hidden (404 page etc)
