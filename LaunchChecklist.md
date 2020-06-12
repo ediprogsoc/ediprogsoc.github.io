@@ -7,7 +7,7 @@
 - [ ] \(Optional) [Update favicons](https://favicon.io/)
 - [X] \(Optional) Update meta descriptions and titles
 - [ ] ~~\(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)~~
-- [ ] \(Optional) [Optimise image sizes](https://imgbot.net/)
+- [X] \(Optional) [Optimise image sizes](https://imgbot.net/)
 - [ ] \(Optional) [Add Webp image compatibility](https://web.dev/serve-images-webp/)
 - [X] \(Optional) [Implement image lazy loading](https://addyosmani.com/blog/lazy-loading/)
 - [ ] ~~\(Optional) Use [`env()`](https://developer.mozilla.org/en-US/docs/Web/CSS/env) to deal with [notched phones](https://bubblin.io/blog/notch)~~
@@ -22,7 +22,7 @@
 - [ ] Use Google Lighthouse to identify & update old dependencies with known vulnerabilities
 
 ###### Domain Provider
-- [ ] Grab a domain
+- [X] Grab a domain
 - [ ] ~~\(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)~~
 - [ ] Go to Github Pages settings and add the new custom domain
 
