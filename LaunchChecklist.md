@@ -45,9 +45,9 @@
 - [X] Use a [Sitemap Generator](https://www.xml-sitemaps.com/), edit output to remove any sites that you want hidden (404 page etc)
 - [X] Add to Github repo (top folder level)
 - [X] Add a robots.txt file with the following content `Sitemap: http://www.yourdomain/sitemap.xml`
-- [ ] Go to [Google Search Console](https://search.google.com/u/0/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=dashboard)
-- [ ] Go to Cloudflare DNS or domain provider DNS, add a record Type `TXT` Name `your domain` Content `verification string`
-- [ ] Once confirmed, input sitemap URL to console for Google Search bot indexing
+- [X] Go to [Google Search Console](https://search.google.com/u/0/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=dashboard)
+- [X] Go to Cloudflare DNS or domain provider DNS, add a record Type `TXT` Name `your domain` Content `verification string`
+- [X] Once confirmed, input sitemap URL to console for Google Search bot indexing
 
 ###### Optional: MX Records and Email Forwarding
 | Description | Email Forwarding | Email Sending |
