@@ -25,10 +25,13 @@ function render(doc){
   </div>
 
   <div class="card back border-0">
-  <img height = "260" class="card-img-top rounded" src=${event.photo_url} alt="" loading="lazy">
-  <div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">${date.toDateString()}</div>
-  <h5 class="font-weight-medium mt-3 card-title">${event.name} <span class="lead">${date.getFullYear()}</span></h5>
-  <p class="mt-3">${event.summary}</p>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><i class="fas fa-info-circle"></i>  ${event.description}</li>
+    <li class="list-group-item"><i class="fas fa-map-marked-alt"></i>  ${event.location}</li>
+    <li class="list-group-item"><i class="fas fa-calendar-alt"></i>  ${date.toLocaleDateString()}</li>
+    <li class="list-group-item"><i class="fas fa-clock"></i>  ${date.toLocaleTimeString()}</li>
+  </ul>
+
   </div>
 
   </div>
