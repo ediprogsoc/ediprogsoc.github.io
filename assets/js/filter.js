@@ -1,83 +1,35 @@
-//Tabs within cards
-$('#bologna-list a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+const deck = document.getElementById("deck");
+const current_time = firebase.firestore.Timestamp.now()
+document.getElementById("datepicker").valueAsDate = new Date();
+listEvents();
 
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3AddClass(x[i], "d-none");
-    if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "d-none");
-  }
-}
-function filterDate(timeFrame){
-  var x,i,t;
-  if (timeFrame == "upcoming"){
-    t = 1;
-  } else if (timeFrame == "past"){
-    t = -1;
-  } else{
-    t = 0;
-  }
-  var curr = new Date();
-  x = document.getElementsByClassName("filterDiv");
-  for (i = 0; i < x.length; i++) {
-    w3AddClass(x[i], "d-none");
-    w3RemoveClass(x[i],"vis")
-    var eventDate = Date.parse(x[i].className.split(" ")[0]);
-//    console.log(eventDate-curr.getTime());
-    if (t*(eventDate-curr.getTime()) >= 0) {
-      w3RemoveClass(x[i], "d-none");
-      w3AddClass(x[i],"vis");
-    }
-  }
+function listEvents(){
+  deck.innerHTML = "";
+  db.collection('events').where('start','>=',firebase.firestore.Timestamp.fromDate(document.getElementById("datepicker").valueAsDate)).get().then((snapshot) => {
+    snapshot.docs.forEach(element => {
+      render(element);
+    });
+  })
 }
 
-function filterPill(event_type){
-  var x,i,t;
-  x = document.getElementsByClassName("filterDiv vis");
-  for (i = 0; i < x.length; i++) {
-    w3AddClass(x[i], "d-none");
-    if (x[i].className.indexOf(event_type) > -1) w3RemoveClass(x[i], "d-none");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+function render(doc){
+  const event = doc.data();
+  const date = event.start.toDate();
+  deck.innerHTML += `<div class="col-12 col-md-6 col-lg-4 filterDiv ${event.tags.reduce((tag1,tag2) => tag1.name + ' ' + tag2.name)}">
+  <div class="card border-0 my-4 cool-hover">
+  <img height = "260" class="card-img-top rounded" src=${event.photo_url} alt="" loading="lazy">
+  <div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">${date.toDateString()}</div>
+  <h5 class="font-weight-medium mt-3 card-title">${event.name} <span class="lead">${date.getFullYear()}</span></h5>
+  <p class="mt-3">${event.summary}</p>
+  <div class = "btn-group">
+  ${(event.tags.map((tag) => {
+    return `<p class = "mr-1"><button class="btn badge badge-pill badge-dark" style="background-color: ${tag.color};" onclick="filterPill(${tag.name})">${tag.name}</button></p>`;
+  })).join('')}
+  </div>
+  <div class="card-footer border-0 p-0" style="background-color: white">
+  <a href="https://www.facebook.com/events/608667819564372/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
+  <!--<a href="https://helloworldhack.com/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>-->
+  </div>
+  </div>
+  </div>`;
 }

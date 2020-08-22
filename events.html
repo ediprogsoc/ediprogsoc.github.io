@@ -58,6 +58,7 @@
         <a class="nav-link" href="faq">FAQ</a>
       </li>
     </ul>
+    
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
           <a class="nav-link" href="sponsor"><i class="fas fa-hands-helping fa-fw"></i> Sponsorship</a>
@@ -100,142 +101,25 @@
 <section class="py-5 container">
 
 <div id="myBtnContainer" class="mb-4 text-center">
-<button class="btn btn-primary mb-1" onclick="filterDate('all')"> Show All</button>
-<button class="btn btn-primary mb-1 active" onclick="filterDate('upcoming')"> Upcoming Events</button>
-<button class="btn btn-primary mb-1" onclick="filterDate('past')"> Past Events</button>
+  <form>
+    <div class="form-group row">
+      <label for="example-date-input" class="col-2 col-form-label">Show Events From</label>
+      <div class="col-10">
+        <input id = "datepicker" class="form-control" type="date" onchange="listEvents()">
+      </div>
+    </div>
+  </form>
+  
 </div>
 
-<div class="row">
+<div class="row" id = "deck">
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="2019-01-31 col-12 col-md-6  col-lg-4 filterDiv Hackathon">
-<div class="card border-0 my-4 cool-hover">
-
-<img class="card-img-top rounded" src="assets/img/events/2019_hwh.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">Mar<span class="d-block">30-31</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2019</span></h5>
-<p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <button class="btn badge badge-pill badge-dark" style="background-color: indigo;" onclick="filterPill('Hackathon')">Hackathon</button></p>
-
-<div class="card-footer border-0 p-0" style="background-color: white">
-<a href="https://www.facebook.com/events/608667819564372/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
-<!--<a href="https://helloworldhack.com/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>-->
-</div>
-</div>
-</div>
+<!--START EVENTS DECK-->
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="2020-01-31 col-12 col-md-6  col-lg-4 filterDiv Hackathon">
-<div class="card border-0 my-4 cool-hover">
-
-<img class="card-img-top rounded" src="assets/img/events/2020_hwh.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">Feb<span class="d-block">8-9</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2020</span></h5>
-<p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <button class="btn badge badge-pill badge-dark" style="background-color: indigo;" onclick="filterPill('Hackathon')">Hackathon</button></p>
-
-<div class="card-footer border-0 p-0" style="background-color: white">
-<a href="https://www.facebook.com/events/2537917466483989/" target="_blank" class="mt-2 mr-2"><i class="fab fa-facebook"></i> Learn More</a>
-<a href="https://jhowewowe.github.io/Hello-World-Hack-2020/" target="_blank" class="mt-2 mr-2"><i class="fas fa-external-link-square-alt"></i> Learn More</a>
-</div>
-</div>
-</div>
-<!--
-TRANSMISSION RECEIVED
 
 
-F̵ir͡st͞ the̵y̛ c̸a̛m͘e f̨o̶r ̀the͠ ͝NHS,͏ ̴an̛d͝ I ҉did҉ ̡n҉ot̶ sṕe̵a͏k͡ ̶o͠ut—
-͜ ̷F̵oŕ I w̡as̛ no͘t͠ il̡l͏.
-
-̡Then ̴they̕ ̷c͡am̢e ͏f̷or̶ th̴e ҉le̶cţu͢r̶e͟s,͠ an͟d̢ ̡I ͜di͘d nót̶ sp͡e̡ak out—
-͝ ͞ F̀or I ͡wa̛s͏ ņo̧t ̧a goo͠d͘ s̵tưd͝en̵t.
-̶
-̵Th̵en҉ ̷t̡hey c̵a͠m̸e for t̷he̵ p͞ast̛a,͏ a͏nd͞ ̨I͡ d͘id̕ nơt s͝peak̨ ͜out—
-̢ ̕F̶or ̴t̵h̶e͠r͘e wa͠s ͠Dęli͠v̧e̶roo̴.͏
-́
-͟Th͟e͡n̷ t̶h͘ey̴ ̡came fór̸ o͠ùr gr͡ea͝tęst̵ g̴i҉f̷t—̨a̡n̢d ͞th́er̴e͘ ͏wa̴s͘ ͠ńo͝ ̸one l̵ef̴t ͜to͟ ̢s͘p̧e͘ak ́f̷or̡ us.
-
-O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
--->
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="2021-01-31 col-12 col-md-6  col-lg-4 filterDiv Workshop">
-<div class="card border-0 my-4 cool-hover">
-<img class="card-img-top rounded" src="assets/img/events/job.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Late 2020</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Workshop: <span class="lead">Internship Preparation</span></h5>
-<p class="mt-3">Prepare for a career in the tech or business world. <button class="btn badge badge-pill badge-primary" onclick="filterPill('Workshop')">Workshop</button></p>
-<div class="card-footer border-0 p-0" style="background-color: white">
-<!--
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
--->
-</div>
-</div>
-</div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->  
-<div class="2020-10-01T19:00:00 col-12 col-md-6  col-lg-4 filterDiv Beginner">
-<div class="card border-0 my-4 cool-hover">
-<img class="card-img-top rounded" src="assets/img/events/machine.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Late 2020</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Beginner's Guide: <span class="lead">Machine Learning</span></h5>
-<p class="mt-3">Fascinated by machine learning but find it too daunting? You're in luck! <button class="btn badge badge-pill badge-primary" style="background-color: green;" onclick="filterPill('Beginner')">Beginner</button></p>
-<div class="card-footer border-0 p-0" style="background-color: white">
-<!--
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
--->
-</div>
-</div>
-</div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="2021-02-10 col-12 col-md-6  col-lg-4 filterDiv Workshop">
-<div class="card border-0 my-4 cool-hover">
-<img class="card-img-top rounded" src="assets/img/events/job.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Early 2021</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Workshop: <span class="lead">Internship Preparation</span></h5>
-<p class="mt-3">Prepare for a career in the tech or business world. <button class="btn badge badge-pill badge-primary" onclick="filterPill('Workshop')">Workshop</button></p>
-<div class="card-footer border-0 p-0" style="background-color: white">
-<!--
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
--->
-</div>
-</div>
-</div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="2021-01-31 col-12 col-md-6  col-lg-4 filterDiv Beginner">
-<div class="card border-0 my-4 cool-hover">
-
-<img class="card-img-top rounded" src="assets/img/events/code.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Early 2021</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Beginner's Guide: <span class="lead">Web Development</span></h5>
-<p class="mt-3">Join the developers of this site as they explain the basics of front-end web development. <button class="btn badge badge-pill badge-primary" style="background-color: green;" onclick="filterPill('Beginner')">Beginner</button></p>
-
-<div class="card-footer border-0 p-0" style="background-color: white">
-<!--
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
--->
-</div>
-</div>
-</div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="2021-03-20 col-12 col-md-6  col-lg-4 filterDiv Hackathon">
-<div class="card border-0 my-4 cool-hover">
-<img class="card-img-top rounded" src="assets/img/events/2020_hwh.jpg" alt="" loading="lazy">
-<div class="date-pos p-2 d-inline-block text-center rounded text-white position-absolute">TBC<span class="d-block">Early 2021</span></div>
-<h5 class="font-weight-medium mt-3 card-title">Hello World Hack <span class="lead">2021</span></h5>
-<p class="mt-3">Beginner friendly 24 hour hackathon with workshops, games and food! <button class="btn badge badge-pill badge-primary" style="background-color: indigo;" onclick="filterPill('Hackathon')">Hackathon</button></p>
-<div class="card-footer border-0 p-0" style="background-color: white">
-<!--
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fab fa-facebook"></i> Coming Soon</a>
-<a href="" target="_blank" class="mt-2 mr-2 p-0"><i class="fas fa-external-link-square-alt"></i> Coming Soon</a>
--->
-</div>
-</div>
-</div>
+<!--END EVENTS DECK-->
 <!--/////////////////////////////////////////////////////////////////////////////-->
 </div>
 
@@ -270,7 +154,23 @@ O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
       </div>
       </section>
 
+<!--
+TRANSMISSION RECEIVED
 
+
+F̵ir͡st͞ the̵y̛ c̸a̛m͘e f̨o̶r ̀the͠ ͝NHS,͏ ̴an̛d͝ I ҉did҉ ̡n҉ot̶ sṕe̵a͏k͡ ̶o͠ut—
+͜ ̷F̵oŕ I w̡as̛ no͘t͠ il̡l͏.
+
+̡Then ̴they̕ ̷c͡am̢e ͏f̷or̶ th̴e ҉le̶cţu͢r̶e͟s,͠ an͟d̢ ̡I ͜di͘d nót̶ sp͡e̡ak out—
+͝ ͞ F̀or I ͡wa̛s͏ ņo̧t ̧a goo͠d͘ s̵tưd͝en̵t.
+̶
+̵Th̵en҉ ̷t̡hey c̵a͠m̸e for t̷he̵ p͞ast̛a,͏ a͏nd͞ ̨I͡ d͘id̕ nơt s͝peak̨ ͜out—
+̢ ̕F̶or ̴t̵h̶e͠r͘e wa͠s ͠Dęli͠v̧e̶roo̴.͏
+́
+͟Th͟e͡n̷ t̶h͘ey̴ ̡came fór̸ o͠ùr gr͡ea͝tęst̵ g̴i҉f̷t—̨a̡n̢d ͞th́er̴e͘ ͏wa̴s͘ ͠ńo͝ ̸one l̵ef̴t ͜to͟ ̢s͘p̧e͘ak ́f̷or̡ us.
+
+O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
+-->
 
 <!-- Footer -->
 <footer class="footer bg-light">
@@ -322,7 +222,34 @@ O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
 </div>
 </footer>
 
+
     <!-- Optional JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAOYtNKsCiwjosXZEsS7Zw-vyrABepxZXQ",
+    authDomain: "prog-soc-site.firebaseapp.com",
+    databaseURL: "https://prog-soc-site.firebaseio.com",
+    projectId: "prog-soc-site",
+    storageBucket: "prog-soc-site.appspot.com",
+    messagingSenderId: "1050991347056",
+    appId: "1:1050991347056:web:e0a9a55f015c36c1c3bbb5",
+    measurementId: "G-MDS039HCQZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -333,6 +260,5 @@ O͟u͘r̷ g̶réa͞t͟e̷st c͜hall̀en͢g͏ȩ ̨h͞a͜d cơme.
     <!-- Custom JS-->
     <script src="assets/js/parallax.js"></script><script src="assets/js/main.js"></script>
     <script src="assets/js/filter.js"></script>
-    <script>filterDate("upcoming")</script>
   </body>
 </html>
