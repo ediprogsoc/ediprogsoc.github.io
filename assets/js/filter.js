@@ -1,6 +1,7 @@
 const deck = document.getElementById("deck");
 const current_time = firebase.firestore.Timestamp.now()
 document.getElementById("datepicker").valueAsDate = new Date();
+console.log("Reached Here!!!!");
 listEvents();
 
 function listEvents(){
