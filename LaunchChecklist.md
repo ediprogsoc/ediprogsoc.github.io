@@ -8,7 +8,7 @@
 - [X] \(Optional) Update meta descriptions and titles
 - [ ] ~~\(Optional) [Convert gifs to autoplaying videos](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video)~~
 - [X] \(Optional) [Optimise image sizes](https://imgbot.net/)
-- [ ] \(Optional) [Add Webp image compatibility](https://web.dev/serve-images-webp/)
+- [ ] \(Optional) Add [Webp image compatibility](https://web.dev/serve-images-webp/) and [AVIF image compatibility](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/)
 - [X] \(Optional) [Implement image lazy loading](https://addyosmani.com/blog/lazy-loading/)
 - [ ] ~~\(Optional) Use [`env()`](https://developer.mozilla.org/en-US/docs/Web/CSS/env) to deal with [notched phones](https://bubblin.io/blog/notch)~~
 - [ ] ~~\(Optional) [Add skip links and landmark regions for screen readers](https://web.dev/bypass/?utm_source=lighthouse&utm_medium=devtools)~~
@@ -26,7 +26,7 @@
 - [ ] ~~\(Optional) Get a free .me domain via [GitHub Education](https://education.github.com/)~~
 - [X] Go to Github Pages settings and add the new custom domain
 
-~~###### Option 1 - Domain Provider > GitHub Pages Hosting~~
+###### ~~Option 1 - Domain Provider > GitHub Pages Hosting~~
 - [ ] Go to domain provider DNS settings and...
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.153` (points towards Github Pages)
 - [ ] Add a record Type `A` Name `your domain` Content `192.30.252.154` (points towards Github Pages)
@@ -42,12 +42,12 @@
 - [X] Go to SSL settings and set to Flexible (or full, if it works for you)
 
 ###### Sitemap & Robots.txt
-- [ ] Use a [Sitemap Generator](https://www.xml-sitemaps.com/), edit output to remove any sites that you want hidden (404 page etc)
-- [ ] Add to Github repo (top folder level)
-- [ ] Add a robots.txt file with the following content `Sitemap: http://www.yourdomain/sitemap.xml`
-- [ ] Go to [Google Search Console](https://search.google.com/u/0/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=dashboard)
-- [ ] Go to Cloudflare DNS or domain provider DNS, add a record Type `TXT` Name `your domain` Content `verification string`
-- [ ] Once confirmed, input sitemap URL to console for Google Search bot indexing
+- [X] Use a [Sitemap Generator](https://www.xml-sitemaps.com/), edit output to remove any sites that you want hidden (404 page etc)
+- [X] Add to Github repo (top folder level)
+- [X] Add a robots.txt file with the following content `Sitemap: http://www.yourdomain/sitemap.xml`
+- [X] Go to [Google Search Console](https://search.google.com/u/0/search-console/welcome?hl=en&utm_source=wmx&utm_medium=deprecation-pane&utm_content=dashboard)
+- [X] Go to Cloudflare DNS or domain provider DNS, add a record Type `TXT` Name `your domain` Content `verification string`
+- [X] Once confirmed, input sitemap URL to console for Google Search bot indexing
 
 ###### Optional: MX Records and Email Forwarding
 | Description | Email Forwarding | Email Sending |

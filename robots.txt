@@ -1,1 +1,1 @@
-Sitemap: http://www.PLACEHOLDER.co.uk/sitemap.xml
+Sitemap: https://ediprogsoc.co.uk/sitemap.xml
