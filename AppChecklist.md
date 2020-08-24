@@ -1,13 +1,13 @@
 General:
 
-[ ] Tag db: doc id = name, entry = colour
-[ ] Event db: doc id = random, tag entry: 2 arrays of strings (one for names (tagNames), one for colours (tagColours))
-[ ] Check for duplicate colours against the tag db
+- [ ] Tag db: doc id = name, entry = colour
+- [ ] Event db: doc id = random, tag entry: 2 arrays of strings (one for names (tagNames), one for colours (tagColours))
+- [ ] Check for duplicate colours against the tag db
 
 In the app:
 
-[ ] Read from the tag db
-[ ] Write to tag and event dbs
+- [ ] Read from the tag db
+- [ ] Write to tag and event dbs
 
 Notes:
 
