@@ -1,3 +1,5 @@
+Site TODO:
+
 - [ ] Update content on sponsor cards
 - [ ] Update logo on navbar
 - [ ] Implement carrousel effect
