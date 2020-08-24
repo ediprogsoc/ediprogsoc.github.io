@@ -45,7 +45,7 @@ function listEvents(){
 function render(doc){
   const event = doc.data();
   const date = event.start.toDate();
-  deck.innerHTML += `<div class="col-12 col-md-6 col-lg-4 card-container filterDiv ${event.tags.reduce((tag1,tag2) => tag1.name + ' ' + tag2.name)}">
+  deck.innerHTML += `<div class="col-12 col-md-6 col-lg-4 card-container filterDiv ${event.tag_names.reduce((tag1,tag2) => tag1 + ' ' + tag2)}">
   <div class="card-flip border-0 mt-4">
   <div class="card front border-0">
   <img height = "260" class="card-img-top rounded" src=${event.photo_url} alt="" loading="lazy">
@@ -66,8 +66,8 @@ function render(doc){
 
   </div>
   <div class = "btn-group">
-  ${(event.tags.map((tag) => {
-    return `<p class = "mr-1"><button class="btn badge badge-pill badge-dark" style="background-color: ${tag.color};" onclick="filterPill(${tag.name})">${tag.name}</button></p>`;
+  ${(event.tag_names.map((name,idx) => {
+    return `<p class = "mr-1"><button class="btn badge badge-pill badge-dark" style="background-color: ${event.tag_colors[idx]};" onclick="filterPill(${name})">${name}</button></p>`;
   })).join('')}
   </div>
   </div>`;
