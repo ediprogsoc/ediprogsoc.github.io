@@ -1,4 +1,4 @@
-console.log("Reached Here!!!!");
+// console.log("Reached Here!!!!");
 const deck = document.getElementById("deck");
 const current_time = firebase.firestore.Timestamp.now()
 document.getElementById("datepicker").valueAsDate = new Date();
