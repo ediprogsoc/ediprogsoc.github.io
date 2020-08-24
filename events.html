@@ -98,8 +98,12 @@
     </div>
   </header>
 
-<section class="py-5 container">
-
+<section class="py-5 container"><div id="myBtnContainer" class="mb-4 text-center">
+  <button class="btn btn-primary mb-1 active d-none" onclick="filterSelection('all')">Show All</button>
+  <button class="btn btn-primary mb-1 d-none" onclick="filterSelection('Easy')">Easy</button>
+  <button class="btn btn-primary mb-1 d-none" onclick="filterSelection('Medium')">Medium</button>
+  <button class="btn btn-primary mb-1 d-none" onclick="filterSelection('Hard')">Hard</button>
+  </div>
 <div id="myBtnContainer" class="mb-4 text-center">
   <form>
     <div class="form-group row">
