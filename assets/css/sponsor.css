@@ -104,7 +104,7 @@ section.pricing {
   --card-width: 80%;
   --card-max-width: 400px;
   --card-height: 500px;
-  --carousel-min-width: 600px;
+  /* --carousel-min-width: 600px; */
   z-index: 1;
   position: relative;
   margin: 0 auto;
