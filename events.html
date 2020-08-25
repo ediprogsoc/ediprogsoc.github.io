@@ -99,22 +99,21 @@
   </header>
 
 <section class="py-5 container">
-<div id="myBtnContainer" class="d-none text-center">
-  <button class="btn btn-primary mb-1 active d-none" onclick="filterSelection('all')">Show All</button>
-  <button class="btn btn-primary mb-1 d-none" onclick="filterSelection('Easy')">Easy</button>
-  <button class="btn btn-primary mb-1 d-none" onclick="filterSelection('Medium')">Medium</button>
-  <button class="btn btn-primary mb-1 d-none" onclick="filterSelection('Hard')">Hard</button>
-  </div>
+
 <div id="myBtnContainer" class="mb-4 text-center">
   <form>
     <div class="form-group row">
-      <label for="example-date-input" class="col-2 col-form-label">Show Events From</label>
+      <label for="datepicker" class="col-2 col-form-label">Show Events From</label>
       <div class="col-10">
         <input id = "datepicker" class="form-control" type="date" onchange="listEvents()">
       </div>
     </div>
   </form>
   
+</div>
+
+<div id="filters" class="text-center mb-4">
+  <button class="btn badge badge-pill badge-dark mr-2" style="background-color: #086788;" onclick="filterPill('all')">all</button>
 </div>
 
 <div class="row" id = "deck">

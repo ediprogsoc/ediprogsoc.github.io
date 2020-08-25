@@ -3,6 +3,10 @@ const deck = document.getElementById("deck");
 const current_time = firebase.firestore.Timestamp.now()
 document.getElementById("datepicker").valueAsDate = new Date();
 listEvents();
+filterPill("all");
+const filters = document.getElementById("filters");
+showButtons();
+
 
 function listEvents(){
   deck.innerHTML = "";
@@ -67,8 +71,52 @@ function render(doc){
   </div>
   <div class = "btn-group">
   ${(event.tag_names.map((name,idx) => {
-    return `<p class = "mr-1"><button class="btn badge badge-pill badge-dark" style="background-color: ${event.tag_colors[idx]};" onclick="filterPill(${name})">${name}</button></p>`;
+    return `<p class = "mr-1"><button class="btn badge badge-pill badge-dark" style="background-color: ${event.tag_colors[idx]};" onclick="filterPill('${name}')">${name}</button></p>`;
   })).join('')}
   </div>
   </div>`;
+}
+
+function showButtons(){
+  db.collection('tags').get().then((snapshot) => {
+    snapshot.docs.forEach((element) => {
+      filters.innerHTML += `<button class="btn badge badge-pill badge-dark mr-2" style="background-color: ${element.data().color};" onclick="filterPill('${element.id}')">${element.id}</button>`;
+    })
+  })
+}
+
+function filterPill(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3AddClass(x[i], "d-none");
+    if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "d-none");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
 }
