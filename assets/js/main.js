@@ -39,3 +39,14 @@ window.addEventListener("scroll", function() {
         	$(this).prev(".btn").find(".fa").removeClass("fa-minus").addClass("fa-plus");
         });
     });
+
+const activate = (id) => {
+  let id2 = id.replace('Name', '')
+  let n = parseInt(id.match(/\d+/))
+  let id3 = 'FB' + ((n % 2 == 0) ? (n-1).toString() : (n+1).toString()) + 'Name'
+  let id4 = id3.replace('Name', '')
+  document.getElementById(id).className = 'nav-link active'
+  document.getElementById(id2).className = 'tab-pane active'
+  document.getElementById(id3).className = 'nav-link'
+  document.getElementById(id4).className = 'tab-pane'
+}
