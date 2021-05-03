@@ -1,20 +1,32 @@
 // console.log("Reached Here!!!!");
 const deck = document.getElementById("deck");
-const current_time = firebase.firestore.Timestamp.now()
-document.getElementById("datepicker").valueAsDate = new Date();
-listEvents();
-filterPill("all");
-const filters = document.getElementById("filters");
-showButtons();
-
+try {
+  const current_time = firebase.firestore.Timestamp.now()
+} catch (e) {
+  console.error('No firebase for this page, but no worries!')
+}
+try {
+  document.getElementById("datepicker").valueAsDate = new Date();
+  listEvents();
+  filterPill("all");
+  const filters = document.getElementById("filters");
+  showButtons();
+} catch (e) {
+  console.error('No datepicker on this page, but no worries!')
+}
 
 function listEvents(){
   deck.innerHTML = "";
-  db.collection('events').where('start','>=',firebase.firestore.Timestamp.fromDate(document.getElementById("datepicker").valueAsDate)).get().then((snapshot) => {
-    snapshot.docs.forEach(element => {
-      render(element);
-    });
-  })
+  try {
+    db.collection('events').where('start','>=',firebase.firestore.Timestamp.fromDate(document.getElementById("datepicker").valueAsDate)).get().then((snapshot) => {
+      snapshot.docs.forEach(element => {
+        render(element);
+      });
+    })
+  } catch (e) {
+    console.error('No firebase for this page, but no worries!')
+  }
+  
 //ADD ADMIN PORTAL
 //   var tomorrow = new Date();
 // tomorrow.setDate(tomorrow.getDate() + 100);
